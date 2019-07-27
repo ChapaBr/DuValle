@@ -23,7 +23,7 @@ body {
 	background-image: url('../imgs/background/background-2.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 98vh;
+	height: 100vh;
 }
 
 section {
@@ -72,5 +72,5 @@ p {
 }
 
 .top60 {
-	top: 60vh;
+	/*top: 60vh;*/
 }
