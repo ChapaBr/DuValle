@@ -1,21 +1,21 @@
 @font-face {
    font-family: "Gotham";
-   src: url(gotham/GothamPro-Light.ttf);
+   src: url(../gotham/GothamPro-Light.ttf);
    font-weight: 300;
 }
 @font-face {
    font-family: "Gotham";
-   src: url(gotham/GothamPro-Medium.ttf);
+   src: url(../gotham/GothamPro-Medium.ttf);
    font-weight: 500;
 }
 @font-face {
    font-family: "Gotham";
-   src: url(gotham/GothamPro-Bold.ttf);
+   src: url(../gotham/GothamPro-Bold.ttf);
    font-weight: 700;
 }
 @font-face {
    font-family: "Gotham";
-   src: url(gotham/GothamPro-Black.ttf);
+   src: url(../gotham/GothamPro-Black.ttf);
    font-weight: 900;
 }
 
@@ -68,9 +68,9 @@ p {
 }
 
 .top40 {
-	/*top: 40vh;*/
+	top: 40vh;
 }
 
 .top60 {
-	/*top: 60vh;*/
+	top: 60vh;
 }
