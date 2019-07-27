@@ -6,7 +6,7 @@
 @font-face {
    font-family: "Gotham";
    src: url(gotham/GothamPro-Medium.ttf);
-   font-weight: 500
+   font-weight: 500;
 }
 @font-face {
    font-family: "Gotham";
@@ -68,7 +68,7 @@ p {
 }
 
 .top40 {
-	top: 40vh;
+	/*top: 40vh;*/
 }
 
 .top60 {
