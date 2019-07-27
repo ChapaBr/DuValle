@@ -1,0 +1,75 @@
+@font-face {
+   font-family: "Gotham";
+   src: url(gotham/GothamPro-Light.ttf);
+   font-weight: 300;
+}
+@font-face {
+   font-family: "Gotham";
+   src: url(gotham/GothamPro-Medium.ttf);
+   font-weight: 500
+}
+@font-face {
+   font-family: "Gotham";
+   src: url(gotham/GothamPro-Bold.ttf);
+   font-weight: 700;
+}
+@font-face {
+   font-family: "Gotham";
+   src: url(gotham/GothamPro-Black.ttf);
+   font-weight: 900;
+}
+
+body {
+	background-image: url('../imgs/background/background-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+section {
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+a {
+	padding: 16px;
+}
+
+img {
+	width: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	font-family: Gotham;
+	font-weight: 500;
+	color: #fff;
+}
+
+h2 {
+	font-size: 56px;
+	line-height: 56px;
+}
+
+h4 {
+	font-size: 32px;
+	line-height: 56px;
+}
+
+p {
+	font-size: 32px;
+}
+
+.top40 {
+	top: 40vh;
+}
+
+.top60 {
+	top: 60vh;
+}
