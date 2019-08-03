@@ -1,3 +1,4 @@
+/* Todas Fonts */
 @font-face {
    font-family: "Gotham";
    src: url(../text-font/Gotham Book.otf);
@@ -19,6 +20,7 @@
    font-weight: 900;
 }
 
+/* Edição Geral */
 html,
 body {
    margin: 0;
@@ -33,12 +35,28 @@ body {
    height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+   font-family: Gotham, Sans-Serif;
+   font-weight: 500;
+   color: #fff;
+}
+
 /* Navbar */
 nav.navbar {
-   padding: 32px  48px;
+   padding: 16px  24px;
+}
+img.imgSvgLogo {
+   width: 24px;
 }
 img.imgSvg {
-   width: 48px;
+   width: 21px;
 }
 ul.listaNav {
    list-style: none;
