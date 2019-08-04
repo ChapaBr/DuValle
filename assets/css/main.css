@@ -230,7 +230,7 @@ h2.titleContent {
 .productsItem a {
    cursor: pointer;
 }
-.productsItem span {
+.btnGreen {
    color: #FFF;
    padding: 13px 55px;
    background-color: #319B42;
@@ -244,7 +244,7 @@ section#product {
    padding-top: 69px;
 }
 #product table.table {
-   margin-top: 25px;
+   margin-top: 33px;
 }
 .imgProductItem {
    margin-top: 24px;
@@ -253,10 +253,12 @@ section#product {
 #product thead th {
    padding: 0;
    border: none;
+   width: 50%;
 }
 .titleProduct {
    font-size: 22px;
    color: #319B42;
+   margin-bottom: 3.5px;
 }
 .tableProduct {
    list-style: none;
@@ -276,6 +278,13 @@ section#product {
    padding: 19px 0;
    border-top: none;
    border-bottom: 0.5px solid #C1C1C1;
+}
+.arrowIcon {
+   width: 12px;
+}
+.btnReturn {
+   font-size: 17px;
+   color: #319B42;
 }
 
 /* Footer */
