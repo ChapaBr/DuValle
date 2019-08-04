@@ -28,7 +28,7 @@ body {
    border: 0;
 }
 
-body {
+section#home {
    background-image: url('../imgs/background/background-home.jpg');
    background-size: cover;
    background-repeat: no-repeat;
@@ -50,6 +50,20 @@ span {
    padding: 0;
    margin: 0;
 }
+a:hover {
+   color: #FFF;
+   text-decoration: none;
+}
+a.btnGray {
+   padding: 13px 64.5px;
+   background-color: rgba(255, 255, 255, .4);
+   color: #FFF;
+   font-size: 17px;
+   border-radius: 12px;
+   margin-top: 20px;
+   position: absolute;
+   font-weight: 700;
+}
 
 /* Alternate BootStrap Style */
 .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto, .container {
@@ -61,8 +75,8 @@ span {
    margin-left: -20px;
 }
 
-/* Navbar */
-nav.navbar {
+/* Navbar  White Items*/
+nav.navbar.white {
    padding: 16px  24px;
    background-color: rgba(29, 35, 30, .36);
 }
@@ -91,6 +105,30 @@ li.itemNav {
    padding: 0;
    margin: 0;
 }
+/* DropDown Navbar White Items*/
+ul.navbar-nav {
+   height: 100vh;
+}
+.navbar-light .navbar-nav .nav-link.white{
+   font-size: 17px;
+   color: #FFF;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+   color: #319B42;
+}
+
+/* Navbar Green Items */
+nav.navbar.green {
+   padding: 16px  24px;
+   background-color: #FFF;
+}
+.navbar-light .navbar-nav .nav-link.green{
+   font-size: 17px;
+   color: #000;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+   color: #319B42;
+}
 
 /* Content Home */
 section#home {
@@ -107,16 +145,6 @@ div.contentHome {
 .contentHome p {
    font-size: 17px;
    font-weight: 400;
-}
-a.knowHome {
-   padding: 13px 64.5px;
-   background-color: rgba(255, 255, 255, .4);
-   color: #FFF;
-   font-size: 17px;
-   border-radius: 12px;
-   margin-top: 20px;
-   position: absolute;
-   font-weight: 700;
 }
 
 /* Informations */
@@ -150,4 +178,39 @@ a.knowHome {
 .tab-pane {
    top: 26px;
    position: relative;
+}
+.imgHome {
+   width: 245px;
+   height: 245px;
+   border-radius: 10px;
+   position: relative;
+   top: 16px;
+}
+
+/* Pag Products */
+section#products {
+   padding-top: 69px;
+}
+h2.titleContent {
+   font-size: 28px;
+   font-weight: 700;
+   color: rgba(0, 0, 0, .87);
+}
+.btnFilter {
+   color: #FFF;
+   padding: 6px 30px;
+   background-color: rgba(0, 0, 0, .30);
+   border-radius: 10px;
+   position: relative;
+   top: 4.3px;
+}
+
+/* Footer */
+h3.titleFooter {
+   font-size: 22px;
+   color: #319B42;
+}
+p.textFooter {
+   color: rgba(0, 0, 0, .56);
+   font-size: 14px;
 }
