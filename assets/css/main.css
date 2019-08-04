@@ -75,6 +75,15 @@ a.btnGray {
    margin-left: -20px;
 }
 
+/* Navbar General */
+li.nav-item img {
+   margin: 17.5px 16px 22.5px 16px;
+}
+li.nav-item p.navbarCopy {
+   font-size: 13px;
+   color: #C1C1C1;
+}
+
 /* Navbar  White Items*/
 nav.navbar.white {
    padding: 16px  24px;
@@ -112,6 +121,7 @@ ul.navbar-nav {
 .navbar-light .navbar-nav .nav-link.white{
    font-size: 17px;
    color: #FFF;
+   padding-top: 33.5px;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
    color: #319B42;
@@ -125,6 +135,7 @@ nav.navbar.green {
 .navbar-light .navbar-nav .nav-link.green{
    font-size: 17px;
    color: #000;
+   padding-top: 33.5px;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
    color: #319B42;
@@ -203,6 +214,27 @@ h2.titleContent {
    border-radius: 10px;
    position: relative;
    top: 4.3px;
+}
+.productsList {
+   list-style: none;
+   padding: 0;
+}
+.productsItem  {
+   padding: 12px 0;
+   text-align: center;
+}
+.productsItem img {
+   width: 335px;
+   height: 335px;
+   border-radius: 10px;
+}
+.productsItem a {
+   color: #FFF;
+   padding: 13px 55px;
+   background-color: #319B42;
+   border-radius: 10px;
+   position: relative;
+   bottom: 14px;
 }
 
 /* Footer */
