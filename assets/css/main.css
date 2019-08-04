@@ -120,11 +120,12 @@ a.knowHome {
 }
 
 /* Informations */
-.nav-tabs a {
-   font-size: 17px;
-}
 .nav-tabs {
    border-bottom: none;
+   text-align: center;
+}
+.nav-tabs a {
+   font-size: 17px;
 }
 #information li {
    width: 33.33%;
