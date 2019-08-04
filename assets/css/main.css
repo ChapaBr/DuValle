@@ -224,11 +224,21 @@ h2.titleContent {
    text-align: center;
 }
 .productsItem img {
-   width: 335px;
-   height: 335px;
+   width: 100%;
    border-radius: 10px;
 }
+/*.productsItem a {
+   color: #FFF;
+   padding: 13px 55px;
+   background-color: #319B42;
+   border-radius: 10px;
+   position: relative;
+   bottom: 14px;
+}*/
 .productsItem a {
+   cursor: pointer;
+}
+.productsItem span {
    color: #FFF;
    padding: 13px 55px;
    background-color: #319B42;
