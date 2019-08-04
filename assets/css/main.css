@@ -102,7 +102,7 @@ h2.titleHome {
 }
 div.contentHome {
    position: relative;
-   top: 50%;
+   top: 25vh;
 }
 a.knowHome {
    padding: 13px 64.5px;
