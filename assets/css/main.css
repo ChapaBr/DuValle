@@ -104,6 +104,10 @@ div.contentHome {
    position: relative;
    top: 25vh;
 }
+.contentHome p {
+   font-size: 17px;
+   font-weight: 400;
+}
 a.knowHome {
    padding: 13px 64.5px;
    background-color: rgba(255, 255, 255, .4);
@@ -112,4 +116,37 @@ a.knowHome {
    border-radius: 12px;
    margin-top: 20px;
    position: absolute;
+   font-weight: 700;
+}
+
+/* Informations */
+.nav-tabs a {
+   font-size: 17px;
+}
+.nav-tabs {
+   border-bottom: none;
+}
+#information li {
+   width: 33.33%;
+}
+.nav-tabs li a {
+   color: rgba(0, 0, 0, .30);
+   padding-bottom: 10px;
+   line-height: 35px;
+}
+.nav-tabs li a.active {
+   color: rgba(0, 0, 0, 1);
+   border-bottom: 3px solid #319B42;
+}
+.nav-tabs li a.active:hover {
+   text-decoration: none;
+}
+.tab-content p {
+   font-size: 14px;
+   color: rgba(0, 0, 0, .56);
+   font-weight: 400;
+}
+.tab-pane {
+   top: 26px;
+   position: relative;
 }
