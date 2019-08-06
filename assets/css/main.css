@@ -166,6 +166,7 @@ div.contentHome {
 .nav-tabs {
    border-bottom: none;
    text-align: center;
+   margin-top: 22px;
 }
 .nav-tabs a {
    font-size: 17px;
@@ -200,6 +201,25 @@ div.contentHome {
    border-radius: 10px;
    position: relative;
    top: 16px;
+   margin-bottom: 64px;
+   border-radius: 10px;
+}
+.seedsVisao {
+   width: 245px;
+   height: auto;
+   position: absolute;
+   right: -4px;
+   bottom: -18px;
+   z-index: 9;
+}
+.seedsMissao {
+   width: 245px;
+   height: auto;
+   position: absolute;
+   left: -34px;
+   bottom: 0;
+   top: 208px;
+   z-index: -9;
 }
 
 /* Pag Products */
