@@ -311,6 +311,46 @@ section#product {
 section#partner {
    padding-top: 69px;
 }
+.txtLabelForm {
+   color: #319B42;
+   font-size: 14px;
+   font-weight: 500;
+}
+.btnFisica {
+   width: 50%;
+   float: left;
+   border-radius: 10px 0 0 10px;
+   color: #fff;
+   background-color: #319B42;
+   border: 1px solid #319B42;
+   border-right: 0;
+   height: 44px;
+}
+.btnJuridica {
+   width: 50%;
+   float: right;
+   border-radius: 0 10px 10px 0;
+   background-color: #FFF;
+   color: #319B42;
+   border: 1px solid #319B42;
+   border-left: none;
+   height: 44px;
+}
+.inputDefault {
+   border: 1px solid #319B42;
+   border-radius: 10px;
+   color: rgba(0, 0, 0, .87);
+   font-size: 17px;
+   padding: 6px 16px;
+}
+.btnSendForm {
+   background-color: #319B42;
+   height: 48px;
+   width: 211px;
+   border-radius: 10px;
+   border: 1px solid #319B42;
+   color: #FFF;
+}
 
 /* Footer */
 h3.titleFooter {
