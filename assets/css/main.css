@@ -307,6 +307,11 @@ section#product {
    color: #319B42;
 }
 
+/* Partner */
+section#partner {
+   padding-top: 69px;
+}
+
 /* Footer */
 h3.titleFooter {
    font-size: 22px;
