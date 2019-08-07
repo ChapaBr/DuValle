@@ -201,11 +201,13 @@ section#information {
 .imgHome {
    width: 245px;
    height: 245px;
-   border-radius: 10px;
    position: relative;
    top: 16px;
    margin-bottom: 64px;
    border-radius: 10px;
+}
+#valores .imgHome {
+   margin-bottom: 0;
 }
 .seedsVisao {
    width: 245px;
@@ -219,9 +221,9 @@ section#information {
    width: 245px;
    height: auto;
    position: absolute;
-   left: -34px;
+   left: -15px;
    bottom: 0;
-   top: 208px;
+   top: 170px;
    z-index: -9;
 }
 .seedsValores {
