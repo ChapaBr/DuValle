@@ -15,118 +15,100 @@
 	<!-- CSS Main -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<!-- Title -->
-	<title>DuValle</title>
+	<title>DuValle - Contato</title>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top white">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top green">
 	<a class="navbar-brand" href="index.html">
-		<img src="assets/imgs/icons/white/logo-icon-white.svg" class="imgSvgLogo">
+		<img src="assets/imgs/icons/green/logo-icon.svg" class="imgSvgLogo">
 	</a>
 	<ul class="listaNav">	
 		<li class="itemNav">
 			<a href="mailto:duvalle@duvalle.agr.br" class="navbarItem">
-			  	<img src="assets/imgs/icons/white/email-icon-white.svg" class="imgSvg">
+			  	<img src="assets/imgs/icons/green/email-icon.svg" class="imgSvg">
 			</a>
 		</li>
 		<li class="itemNav">
 			<a href="tel:+551832634272" class="navbarItem">
-			  	<img src="assets/imgs/icons/white/phone-icon-white.svg" class="imgSvgLogo">
+			  	<img src="assets/imgs/icons/green/phone-icon.svg" class="imgSvgLogo">
 			</a>
 		</li>
 		<li class="itemNav">
 			<a href="https://wa.me/+5518996613390" class="navbarItem">
-			  	<img src="assets/imgs/icons/white/whatsapp-icon-white.svg" class="imgSvg">
+			  	<img src="assets/imgs/icons/green/whatsapp-icon-green.svg" class="imgSvg">
 			</a>
 		</li>
 		<li class="itemNav">
 			<a class="navbar-toggler navbarItem" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-			  	<img src="assets/imgs/icons/white/hamburger-icon-white.svg" class="imgSvg">
+			  	<img src="assets/imgs/icons/green/hamburger-icon.svg" class="imgSvg">
 			</a>
 		</li>
 	</ul>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link green" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link green" href="produtos.html">Produtos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link green" href="parceiro.html">Seja nosso parceiro</a>
+      </li>
       <li class="nav-item active">
-        <a class="nav-link white" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link white" href="produtos.html">Produtos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link white" href="parceiro.html">Seja nosso parceiro</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link white" href="contato.html">Contato</a>
+        <a class="nav-link green" href="contato.html">Contato</a>
       </li>
       <li class="nav-item fixed-bottom text-center">
-      	<img src="assets/imgs/icons/green/email-icon.svg" class="imgSvg">
-      	<img src="assets/imgs/icons/green/phone-icon.svg" class="imgSvgLogo">
-      	<img src="assets/imgs/icons/green/whatsapp-icon-green.svg" class="imgSvg">
+      	<img src="assets/imgs/icons/green/email-icon.svg" class="imgSvg img-fluid">
+      	<img src="assets/imgs/icons/green/phone-icon.svg" class="imgSvgLogo img-fluid">
+      	<img src="assets/imgs/icons/green/whatsapp-icon-green.svg" class="imgSvg img-fluid">
       	<p class="navbarCopy">Copyright &copy; 2019 DuValle</p>
       </li>
     </ul>
   </div>
 </nav>
 
-<section id="home">
+<section id="partner">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-md-12 col-sm-12">
-				<div class="contentHome">
-					<h2 class="titleHome">Conheça nossa <br/>linha de produtos!</h2>
-					<p>A Duvalle oferece uma grande <br/>variedade de sementes para gramados</p>
-					<a href="#" class="btnGreenHome">Saiba Mais</a>
-				</div>
+				<h2 class="titleContent">Contato</h2>
+				<form>
+				  <div class="form-row">
+				    <div class="form-group col-md-6">
+					  <label class="txtLabelForm" for="inputName">Nome</label>
+					  <input type="text" class="form-control inputDefault" id="inputName" placeholder="Maria Inc">
+					</div>
+				  	<div class="form-group col-md-6">
+				      <label class="txtLabelForm" for="inputTel">Telefone</label>
+				      <input type="tel" class="form-control inputDefault" id="inputTel" placeholder="(11)445-4534">
+				  	</div>
+				  </div>
+				  <div class="form-row">
+				    <div class="form-group col-md-6">
+				      <label class="txtLabelForm" for="inputlEmail">E-mail</label>
+				      <input type="email" class="form-control inputDefault" id="inputEmail" placeholder="email@email.com">
+				    </div>
+				    <div class="form-group col-md-6">
+				      <label class="txtLabelForm" for="inputCidade">Cidade</label>
+				      <input type="text" class="form-control inputDefault" id="inputCidade" placeholder="São Paulo">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="txtLabelForm" for="exampleFormControlTextarea1">Mensagem</label>
+				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				  </div>
+				  <div class="form-group text-center">
+				  	<button type="submit" class="btnSendForm">Enviar</button>
+				  </div>
+				</form>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="information">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-12 col-sm-12">
-				<ul class="nav nav-tabs">
-				  <li class="active"><a data-toggle="tab" href="#visao" class="active">Visão</a></li>
-				  <li><a data-toggle="tab" href="#missao">Missão</a></li>
-				  <li><a data-toggle="tab" href="#valores">Valores</a></li>
-				</ul>
-
-				<div class="tab-content">
-				  <div id="visao" class="tab-pane fade in active show">
-				    <p>
-				    	Ser referência brasileira como uma empresa de excelência em sementes para pastagem e adubação verde, que promove desenvolvimento para a sociedade rural e que as pessoas tenham orgulho de trabalhar. 
-					</p>
-					<img src="assets/imgs/overlay/seeds-pattern-1.svg" class="seedsVisao">
-					<img src="assets/imgs/pictures/visao.jpg" class="imgHome">
-				  </div> 
-				  <div id="missao" class="tab-pane fade">
-				    <p>
-				    	Atender às necessidades do mercado de sementes, com novas tecnologias, genéticas, eficiência e integraçã, objetivando melhorar a rentabilidade dos nossos clientes. 
-				    </p>
-				    <img src="assets/imgs/pictures/missao.jpg" class="imgHome" style="float: right;">
-				    <img src="assets/imgs/overlay/seeds-pattern-1.svg" class="seedsMissao">
-				  </div>
-				  <div id="valores" class="tab-pane fade">
-				    <p>
-				    	<ul style="list-style: none;margin:0;padding:0;">
-				    		<p>Reconhecimento de nossos colaboradores.</p>
-				    		<p>Ética nas relações comerciais.</p>
-				    		<p>Foco no relacionamento e comprometimento.</p>
-				    		<p>Aperfeiçõamento profissional.</p>
-				    		<p>Agilidade, flexibilidade e criatividade.</p>
-				    	</ul> 
-				    </p>
-				    <img src="assets/imgs/pictures/valores.jpg" class="imgHome">
-				    <img src="assets/imgs/overlay/seeds-pattern-2.svg" class="seedsValores">
-				  </div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 <footer id="footer">
 	<div class="container">
@@ -168,11 +150,11 @@
 		</div>
 		<div class="row">
 			<div class="col-12">
-				<p class="textFooter" style="color:rgba(0, 0, 0, .56); font-size: 14px; margin: 10px 0;">
+				<p class="textFooter">
 					Rua Lolita Sanches Pretel, 1001 | 19360-000<br/>
 					Santo Anastácio - São Paulo, Brasil
 				</p>
-				<p style="color:rgba(0, 0, 0, .56); font-size: 14px; margin: 10px 0;border-top: 0.5px solid #C1C1C1;padding-top: 10.5px;">Copyright &copy; 2019 DuValle</p>
+				<p class="textFooterLine">Copyright &copy; 2019 DuValle</p>
 				<p style="color:rgba(0, 0, 0, .56); font-size: 14px; margin: 10px 0;">
 					Desenvolvido por <a href="https://www.behance.net/VictorMaloyama" class="developers" title="Victor Maloyama">Victor Maloyama</a><br/>
 					e <a href="https://chapabr.github.io/portfolio/" class="developers" title="Guilherme Augusto">Guilherme Augusto</a>
