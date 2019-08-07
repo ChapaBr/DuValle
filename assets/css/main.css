@@ -54,9 +54,9 @@ a:hover {
    color: #FFF;
    text-decoration: none;
 }
-a.btnGray {
+a.btnGreenHome {
    padding: 13px 64.5px;
-   background-color: rgba(255, 255, 255, .4);
+   background-color: #319B42;
    color: #FFF;
    font-size: 17px;
    border-radius: 12px;
@@ -163,6 +163,9 @@ div.contentHome {
 }
 
 /* Informations */
+section#information {
+   margin-bottom: 95px;
+}
 .nav-tabs {
    border-bottom: none;
    text-align: center;
@@ -220,6 +223,15 @@ div.contentHome {
    bottom: 0;
    top: 208px;
    z-index: -9;
+}
+.seedsValores {
+   width: 300px;
+   height: auto;
+   position: absolute;
+   right: -14px;
+   bottom: 0;
+   top: 180px;
+   z-index: 9;
 }
 
 /* Pag Products */
@@ -310,6 +322,7 @@ section#product {
 /* Partner */
 section#partner {
    padding-top: 69px;
+   margin-bottom: 36px;
 }
 .txtLabelForm {
    color: #319B42;
@@ -360,4 +373,40 @@ h3.titleFooter {
 p.textFooter {
    color: rgba(0, 0, 0, .56);
    font-size: 14px;
+}
+ul.footerList {
+   list-style: none;
+   padding: 0;
+   margin-top: 54px;
+}
+ul.footerList li:first-child {
+   padding: 0 12px;
+   float: left;
+   padding: 0;
+}
+ul.footerList img {
+   width: 21px;
+}
+ul.footerList li:first-child img {
+   width: 124px;
+}
+ul.footerList li {
+   padding: 0 12px;
+   float: right;
+}
+a.developers {
+   color: rgba(0, 0, 0, .87);
+   font-weight: 700;
+}
+p.textFooter {
+   color:rgba(0, 0, 0, .56);
+   font-size: 14px;
+   margin: 10px 0;
+}
+p.textFooterLine {
+   color:rgba(0, 0, 0, .56);
+   font-size: 14px;
+   margin: 10px 0;
+   border-top: 0.5px solid #C1C1C1;
+   padding-top: 10.5px;
 }
