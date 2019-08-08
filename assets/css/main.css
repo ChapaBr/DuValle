@@ -64,6 +64,12 @@ a.btnGreenHome {
    position: absolute;
    font-weight: 700;
 }
+a.btnGreenHome:hover {
+   background-color: #36CB4E;
+}
+a.btnGreenHome:active {
+   background-color: #2C6A36;
+}
 .imgProduct {
    width: 100%;
    border-radius: 10px;
