@@ -358,7 +358,26 @@ section#partner {
    height: 44px;
 }
 .inputDefault {
+   border: 1px solid #707070;
+   border-radius: 10px;
+   color: rgba(0, 0, 0, .87);
+   font-size: 17px;
+   padding: 6px 16px;
+}
+.inputDefault::placeholder,
+.inputValid::placeholder,
+.inputInvalid::placeholder {
+   color: rgba(0, 0, 0, .30);
+}
+.inputValid {
    border: 1px solid #319B42;
+   border-radius: 10px;
+   color: rgba(0, 0, 0, .87);
+   font-size: 17px;
+   padding: 6px 16px;
+}
+.inputInvalid {
+   border: 1px solid #D64545;
    border-radius: 10px;
    color: rgba(0, 0, 0, .87);
    font-size: 17px;
@@ -417,4 +436,8 @@ p.textFooterLine {
    margin: 10px 0;
    border-top: 0.5px solid #C1C1C1;
    padding-top: 10.5px;
+}
+
+.botaoFixo {
+   position: fixed;
 }

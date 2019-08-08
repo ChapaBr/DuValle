@@ -79,8 +79,8 @@
 					<label class="txtLabelForm">Tipo</label>
 				  <div class="form-row">
 				    <div class="form-group col-12 col-md-12">
-				      <button type="button" class="form-control btnFisica" id="inputTipo">Pessoa Física</button>
-				      <button type="button" class="form-control btnJuridica" id="inputTipo">Pessoa Jurídica</button>
+				      <button type="button" value="fisica" class="btnFisica active" id="inputTipo">Pessoa Física</button>
+				      <button type="button" value="juridica" class="btnJuridica" id="inputTipo">Pessoa Jurídica</button>
 				    </div>
 				    <div class="form-group col-6 col-md-6">
 				    </div>
@@ -88,27 +88,42 @@
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 					  <label class="txtLabelForm" for="inputName">Nome</label>
-					  <input type="text" class="form-control inputDefault" id="inputName" placeholder="Maria Inc">
+					  <input type="text" class="form-control inputDefault" id="inputName" placeholder="Maria Inc" required="inputName">
+					  <div class="invalid-feedback">
+				        Nome obrigatório
+				      </div>
 					</div>
 				  	<div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputTel">Telefone</label>
 				      <input type="tel" class="form-control inputDefault" id="inputTel" placeholder="(11)445-4534">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				  	</div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputlEmail">E-mail</label>
 				      <input type="email" class="form-control inputDefault" id="inputEmail" placeholder="email@email.com">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputCep">CEP</label>
 				      <input type="text" class="form-control inputDefault" id="inputCep" placeholder="09865-670">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputlCidade">Cidade</label>
 				      <input type="email" class="form-control inputDefault" id="inputCidade" placeholder="São Paulo">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputlCidade">UF</label>
@@ -142,21 +157,30 @@
 						<option value="SE">SE</option>
 						<option value="TO">TO</option>
 				      </select>
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputlEndereco">Endereço</label>
 				      <input type="email" class="form-control inputDefault" id="inputEndero" placeholder="Rua Joaquim Chuas">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputNumero">Numero</label>
 				      <input type="number" class="form-control inputDefault" id="inputNumero" placeholder="5040">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="txtLabelForm" for="exampleFormControlTextarea1">Mensagem</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				    <textarea class="form-control inputDefault" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem.."></textarea>
 				  </div>
 				  <div class="form-group text-center">
 				  	<button type="submit" class="btnSendForm">Enviar</button>
@@ -227,6 +251,8 @@
 <!-- Bootstrap -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Main Script -->
+<script type="text/javascript" src="assets/js/main.js"></script>
   
 </body>
 </html>
