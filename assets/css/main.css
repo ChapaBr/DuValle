@@ -455,7 +455,6 @@ p.textFooterLine {
 /* Media Map */
 
 
-
 /* Testando transition checkbox */
 a.navbar-toggler {
    width: 21px;
@@ -523,3 +522,4 @@ a.navbar-toggler {
    transform: translate(0, 7px) rotate(45deg);
    background-color: #319B42;
 }
+
