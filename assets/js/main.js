@@ -19,23 +19,29 @@ $(document).ready(function(){
 			$('.navbar-brand img').attr("src", "assets/imgs/icons/white/logo-icon-white.svg");
 			$('.navbar-brand img').css("width", "24px");
 			$('.mudaNav').css("display", "block");
+			$('.nav-item a.nav-link').css('color', '#FFF');
 			$(this).find('img').attr("src", "assets/imgs/icons/white/hamburger-icon-white.svg");
 			$(this).find('.barraMid').css("background-color", "#FFF");
-			$(this).find('.barraTop').css("transform", "translate(0, 0px) rotate(0deg)");
+			$(this).find('.barraTop').css("transform", "rotate(0deg)");
 			$(this).find('.barraTop').css("background-color", "#FFF");
-			$(this).find('.barraBot').css("transform", "translate(0, 0px) rotate(0deg)");
+			$(this).find('.barraTop').css("top", "6px");
+			$(this).find('.barraBot').css("transform", "rotate(0deg)");
 			$(this).find('.barraBot').css("background-color", "#FFF");
+			$(this).find('.barraBot').css("bottom", "0px");
 		} else {
 			$('nav.navbar').css("background-color", "#FFF");
 			$('.navbar-brand img').attr("src", "assets/imgs/logos/logo-w-text.svg");
 			$('.navbar-brand img').css("width", "126px");
 			$('.mudaNav').css("display", "none");
+			$('.nav-item a.nav-link').css('color', 'rgba(0, 0, 0, .87)');
 			$(this).find('img').attr("src", "assets/imgs/icons/green/error-icon-red.svg");
 			$(this).find('.barraMid').css("background-color", "transparent");
-			$(this).find('.barraTop').css("transform", "translate(0, 7px) rotate(-45deg)");
+			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
+			$(this).find('.barraTop').css("top", "10px");
 			$(this).find('.barraTop').css("background-color", "#319B42");
-			$(this).find('.barraBot').css("transform", "translate(0, -8px) rotate(45deg)");
+			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("background-color", "#319B42");
+			$(this).find('.barraBot').css("bottom", "10px");
 		}
 	});
 });

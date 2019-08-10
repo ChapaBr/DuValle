@@ -461,28 +461,10 @@ a.navbar-toggler {
    height: 21px;
    position: relative;
 }
-
-.navbar-toggler label {
-   width: 100%;
-   height: 100%;
-   background-color: transparent;
-   position: absolute;
-   transition: all .3s linear;
-}
-
-#check{
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  opacity: .0;
- }
-
  .navbar-toggler span {
    margin: 0;
    padding: 0;
  }
-
 .navbar-toggler span.barraTop {
    width: 21px;
    height: 2px;
@@ -491,7 +473,6 @@ a.navbar-toggler {
    background-color: #FFF;
    transition: all .3s linear;
 }
-
 .navbar-toggler span.barraMid {
    width: 21px;
    height: 2px;
@@ -501,7 +482,6 @@ a.navbar-toggler {
    transition: all .3s linear;
    top: 13px;
 }
-
 .navbar-toggler span.barraBot {
    width: 21px;
    height: 2px;
@@ -510,38 +490,4 @@ a.navbar-toggler {
    background-color: #FFF;
    transition: all .3s linear;
 }
-
-/*.navbar-toggler span:before {
-   content: '';
-   width: 21px;
-   height: 2px;
-   bottom: -7px;
-   position: absolute;
-   background-color: #FFF;
-   transition: all .3s linear;
-}
-
-.navbar-toggler span:after {
-   content: '';
-   width: 21px;
-   height: 2px;
-   top: -7px;
-   position: absolute;
-   background-color: #FFF;
-   transition: all .3s linear;
-}
-
-.collapsed:selection ~ span {
-   background-color: transparent;
-}
-
-.collapsed:selection ~ span:before {
-   transform: translate(0, -7px) rotate(-45deg);
-   background-color: #319B42;
-}
-
-.collapsed:selection ~ span:after {
-   transform: translate(0, 7px) rotate(45deg);
-   background-color: #319B42;
-}*/
 
