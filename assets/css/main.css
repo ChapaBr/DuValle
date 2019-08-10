@@ -510,16 +510,16 @@ a.navbar-toggler {
    transition: all .3s linear;
 }
 
-#check:checked ~ span {
+#check:active ~ span {
    background-color: transparent;
 }
 
-#check:checked ~ span:before {
+#check:active ~ span:before {
    transform: translate(0, -7px) rotate(-45deg);
    background-color: #319B42;
 }
 
-#check:checked ~ span:after {
+#check:active ~ span:after {
    transform: translate(0, 7px) rotate(45deg);
    background-color: #319B42;
 }
