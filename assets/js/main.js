@@ -32,7 +32,7 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "none");
 			$(this).find('img').attr("src", "assets/imgs/icons/green/error-icon-red.svg");
 			$(this).find('.barraMid').css("background-color", "transparent");
-			$(this).find('.barraTop').css("transform", "translate(0, 6px) rotate(-45deg)");
+			$(this).find('.barraTop').css("transform", "translate(0, 7px) rotate(-45deg)");
 			$(this).find('.barraTop').css("background-color", "#319B42");
 			$(this).find('.barraBot').css("transform", "translate(0, -8px) rotate(45deg)");
 			$(this).find('.barraBot').css("background-color", "#319B42");
