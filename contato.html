@@ -60,7 +60,7 @@
       <li class="nav-item active">
         <a class="nav-link green" href="contato.html">Contato</a>
       </li>
-      <li class="nav-item fixed-bottom text-center">
+      <li class="nav-item text-center navContato">
       	<img src="assets/imgs/icons/green/email-icon.svg" class="imgSvg img-fluid">
       	<img src="assets/imgs/icons/green/phone-icon.svg" class="imgSvgLogo img-fluid">
       	<img src="assets/imgs/icons/green/whatsapp-icon-green.svg" class="imgSvg img-fluid">
@@ -80,25 +80,37 @@
 				    <div class="form-group col-md-6">
 					  <label class="txtLabelForm" for="inputName">Nome</label>
 					  <input type="text" class="form-control inputDefault" id="inputName" placeholder="Maria Inc">
+					  <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 					</div>
 				  	<div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputTel">Telefone</label>
 				      <input type="tel" class="form-control inputDefault" id="inputTel" placeholder="(11)445-4534">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				  	</div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputlEmail">E-mail</label>
 				      <input type="email" class="form-control inputDefault" id="inputEmail" placeholder="email@email.com">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				    <div class="form-group col-md-6">
 				      <label class="txtLabelForm" for="inputCidade">Cidade</label>
 				      <input type="text" class="form-control inputDefault" id="inputCidade" placeholder="São Paulo">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="txtLabelForm" for="exampleFormControlTextarea1">Mensagem</label>
-				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+				    <textarea class="form-control inputDefault" id="exampleFormControlTextarea1" rows="3"></textarea>
 				  </div>
 				  <div class="form-group text-center">
 				  	<button type="submit" class="btnSendForm">Enviar</button>
@@ -169,6 +181,8 @@
 <!-- Bootstrap -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
+<!-- Main Script -->
+<script type="text/javascript" src="assets/js/main.js"></script> 
+
 </body>
 </html>

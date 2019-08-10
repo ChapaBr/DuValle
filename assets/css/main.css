@@ -75,7 +75,11 @@ a.btnGreenHome:active {
    border-radius: 10px;
 }
 .navContato {
-   margin-top: 100%;
+   position: absolute;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+   bottom: 70px;
 }
 
 /* Alternate BootStrap Style */
@@ -96,7 +100,9 @@ li.nav-item p.navbarCopy {
    font-size: 13px;
    color: #C1C1C1;
 }
-
+nav.navbar:has(+ .show) {
+   background-color: #FFF !important;
+}
 /* Navbar  White Items*/
 nav.navbar.white {
    padding: 16px  24px;
@@ -329,7 +335,12 @@ section#product {
    font-size: 17px;
    color: #319B42;
 }
-
+div.product {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
 /* Partner */
 section#partner {
    padding-top: 69px;
