@@ -13,19 +13,19 @@ $(document).ready(function(){
 			$(this).addClass('inputValid');
 		}
 	});
-	$('a.navbar-toggler').click(function(){
-		if($('div#navbarNavDropdown').hasClass('show')){
-			$('nav.navbar').css("background-color", "rgba(29, 35, 30, .36)");
-			$('.navbar-brand img').attr("src", "assets/imgs/icons/white/logo-icon-white.svg");
-			$('.navbar-brand img').css("width", "24px");
-			$('.mudaNav').css("display", "block");
-			$(this).find('img').attr("src", "assets/imgs/icons/white/hamburger-icon-white.svg");
-		} else {
-			$('nav.navbar').css("background-color", "#FFF");
-			$('.navbar-brand img').attr("src", "assets/imgs/logos/logo-w-text.svg");
-			$('.navbar-brand img').css("width", "126px");
-			$('.mudaNav').css("display", "none");
-			$(this).find('img').attr("src", "assets/imgs/icons/green/error-icon-red.svg");
-		}
-	})
+	// $('a.navbar-toggler').click(function(){
+	// 	if($('div#navbarNavDropdown').hasClass('show')){
+	// 		$('nav.navbar').css("background-color", "rgba(29, 35, 30, .36)");
+	// 		$('.navbar-brand img').attr("src", "assets/imgs/icons/white/logo-icon-white.svg");
+	// 		$('.navbar-brand img').css("width", "24px");
+	// 		$('.mudaNav').css("display", "block");
+	// 		$(this).find('img').attr("src", "assets/imgs/icons/white/hamburger-icon-white.svg");
+	// 	} else {
+	// 		$('nav.navbar').css("background-color", "#FFF");
+	// 		$('.navbar-brand img').attr("src", "assets/imgs/logos/logo-w-text.svg");
+	// 		$('.navbar-brand img').css("width", "126px");
+	// 		$('.mudaNav').css("display", "none");
+	// 		$(this).find('img').attr("src", "assets/imgs/icons/green/error-icon-red.svg");
+	// 	}
+	// });
 });
