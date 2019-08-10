@@ -478,18 +478,40 @@ a.navbar-toggler {
   opacity: .0;
  }
 
-.navbar-toggler span {
+ .navbar-toggler span {
+   margin: 0;
+   padding: 0;
+ }
+
+.navbar-toggler span.barraTop {
    width: 21px;
    height: 2px;
-   top: 40px;
-   left: 14px;
+   top: 6px;
+   position: absolute;
+   background-color: #FFF;
+   transition: all .3s linear;
+}
+
+.navbar-toggler span.barraMid {
+   width: 21px;
+   height: 2px;
+   left: 12px;
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
    top: 13px;
 }
 
-.navbar-toggler span:before {
+.navbar-toggler span.barraBot {
+   width: 21px;
+   height: 2px;
+   bottom: 0px;
+   position: absolute;
+   background-color: #FFF;
+   transition: all .3s linear;
+}
+
+/*.navbar-toggler span:before {
    content: '';
    width: 21px;
    height: 2px;
@@ -509,17 +531,17 @@ a.navbar-toggler {
    transition: all .3s linear;
 }
 
-#check:active ~ span {
+.collapsed:selection ~ span {
    background-color: transparent;
 }
 
-#check:active ~ span:before {
+.collapsed:selection ~ span:before {
    transform: translate(0, -7px) rotate(-45deg);
    background-color: #319B42;
 }
 
-#check:active ~ span:after {
+.collapsed:selection ~ span:after {
    transform: translate(0, 7px) rotate(45deg);
    background-color: #319B42;
-}
+}*/
 
