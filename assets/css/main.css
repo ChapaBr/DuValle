@@ -457,13 +457,13 @@ p.textFooterLine {
 
 
 /* Testando transition checkbox */
-.menu {
-   width: 88px;
-   height: 88px;
+a.navbar-toggler {
+   width: 21px;
+   height: 21px;
    position: relative;
 }
 
-.menu label {
+.navbar-toggler label {
    width: 100%;
    height: 100%;
    background-color: transparent;
@@ -479,31 +479,32 @@ p.textFooterLine {
   opacity: .0;
  }
 
-.menu span {
-   width: 60px;
-   height: 8px;
+.navbar-toggler span {
+   width: 21px;
+   height: 2px;
    top: 40px;
    left: 14px;
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
+   top: 13px;
 }
 
-.menu span:before {
+.navbar-toggler span:before {
    content: '';
-   width: 60px;
-   height: 8px;
-   bottom: -20px;
+   width: 21px;
+   height: 2px;
+   bottom: -7px;
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
 }
 
-.menu span:after {
+.navbar-toggler span:after {
    content: '';
-   width: 60px;
-   height: 8px;
-   top: -20px;
+   width: 21px;
+   height: 2px;
+   top: -7px;
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
@@ -514,11 +515,11 @@ p.textFooterLine {
 }
 
 #check:checked ~ span:before {
-   transform: translate(0, -20px) rotate(-45deg);
+   transform: translate(0, -7px) rotate(-45deg);
    background-color: #319B42;
 }
 
 #check:checked ~ span:after {
-   transform: translate(0, 20px) rotate(45deg);
+   transform: translate(0, 7px) rotate(45deg);
    background-color: #319B42;
 }
