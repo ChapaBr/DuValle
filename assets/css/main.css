@@ -100,9 +100,6 @@ li.nav-item p.navbarCopy {
    font-size: 13px;
    color: #C1C1C1;
 }
-nav.navbar:has(+ .show) {
-   background-color: #FFF !important;
-}
 /* Navbar  White Items*/
 nav.navbar.white {
    padding: 16px  24px;
