@@ -292,6 +292,19 @@ button.btnGreen {
 section#product {
    padding-top: 69px;
 }
+.owl-carousel div {
+   width: auto;
+}
+.owl-dots {
+   display: none;
+}
+.owl-item .active {
+   max-width: 100%;
+   width: 100%;
+}
+.itemCarousel {
+   color: rgba(0, 0, 0, .56);
+}
 #product table.table {
    margin-top: 33px;
 }

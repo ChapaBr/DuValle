@@ -1,4 +1,22 @@
 $(document).ready(function(){
+	$('.owl-carousel').owlCarousel({
+    items: 0,
+    autoplay: false ,
+    center: false,
+    responsive: true,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
 	$('.form-control').blur(function(){
 		var conteudo = $(this).val().length;
 		if(conteudo <= 0){

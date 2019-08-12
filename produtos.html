@@ -10,6 +10,9 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="DuValle">
 	<meta property="og:site_name" content="DuValle">
+	<!-- OWL Carousel -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 	<!-- Bootstrap -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- CSS Main -->
@@ -75,11 +78,21 @@
 <section id="products">
 	<div class="container">
 		<div class="row">
-			<div class="col-6 col-md-6 col-sm-6">
+			<div class="col-12 col-md-12 col-sm-12">
 				<h2 class="titleContent">Produtos</h2>
 			</div>
-			<div class="col-6 col-md-6 col-sm-6 text-right">
-				<a href="#" class="btnFilter">Filtro</a>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-12 col-sm-12">
+				<div class="owl-carousel owl-theme">
+					<div><a href="#" class="itemCarousel"> Todas </a></div>
+				  	<div><a href="#" class="itemCarousel"> F. de verão </a></div>
+				  	<div><a href="#" class="itemCarousel"> Leguminosas </a></div>
+				  	<div><a href="#" class="itemCarousel"> F. de inverno </a></div>
+				  	<div><a href="#" class="itemCarousel"> Your Content </a></div>
+				  	<div><a href="#" class="itemCarousel"> Your Content </a></div>
+				  	<div><a href="#" class="itemCarousel"> Your Content </a></div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
@@ -281,6 +294,8 @@
 
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<!-- OWL Carousel -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- Bootstrap -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
