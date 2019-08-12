@@ -464,13 +464,12 @@ a.navbar-toggler {
  .navbar-toggler span {
    margin: 0;
    padding: 0;
- }
+}
 .navbar-toggler span.barraTop {
    width: 21px;
    height: 2px;
    top: 6px;
    position: absolute;
-   background-color: #FFF;
    transition: all .3s linear;
 }
 .navbar-toggler span.barraMid {
@@ -489,5 +488,18 @@ a.navbar-toggler {
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
+}
+.navbarHome span.barraTop,
+.navbarHome span.barraMid,
+.navbarHome span.barraBot {
+   background-color: #FFF;
+}
+.navbarRestante span.barraTop,
+.navbarRestante span.barraMid,
+.navbarRestante span.barraBot,
+.navbarProdutos span.barraTop,
+.navbarProdutos span.barraMid,
+.navbarProdutos span.barraBot {
+   background-color: #319B42;
 }
 
