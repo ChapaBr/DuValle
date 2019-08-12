@@ -15,7 +15,7 @@ $(document).ready(function(){
             items:5
         }
     }
-})
+});
 
 	$('.form-control').blur(function(){
 		var conteudo = $(this).val().length;
