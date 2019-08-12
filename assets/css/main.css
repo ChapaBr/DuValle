@@ -284,7 +284,10 @@ h2.titleContent {
    position: relative;
    bottom: 14px;
 }
-
+button.btnGreen {
+   border: none;
+   text-decoration: none;
+}
 /* Product */
 section#product {
    padding-top: 69px;

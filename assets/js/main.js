@@ -94,8 +94,12 @@ $(document).ready(function(){
 		tamanhoBot = $(this).scrollTop() + $(window).height();
 		if(tamanhoBot > tamanhoFooter){
 			$('.buttonArea').css('position', 'relative');
+			$('.buttonArea').css('margin-bottom', '64px');
+			$('.buttonArea').css('margin-top', '24px');
 		} else {
 			$('.buttonArea').css('position', 'fixed');
+			$('.buttonArea').css('margin-bottom', '0px');
+			$('.buttonArea').css('margin-top', '0px');
 		}
 	});
 });
