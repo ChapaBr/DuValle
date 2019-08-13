@@ -15,7 +15,29 @@ $(document).ready(function(){
             items:3
         }
     }
-});
+	});
+
+	$('.owl-carousel a').click(function(){
+		var typeItem = $(this).attr('rel');
+		if(typeItem === 'todos'){
+			$('.productsItem').css("display", "block");
+		} else if(typeItem === 'verao'){
+			$('ul .productsItem').css("display", "none");
+			$('ul .verao').css("display", "block");
+			$('ul .leguminosas').css("display", "none");
+			$('.productsList .inverno').css("display", "none");
+		} else if(typeItem === 'leguminosas'){
+			$('ul .verao').css("display", "none");
+			$('ul .productsItem').css("display", "none");
+			$('ul .leguminosas').css("display", "block");
+			$('ul .inverno').css("display", "none");
+		} else if(typeItem === 'inverno'){
+			$('ul .verao').css("display", "none");
+			$('ul .productsItem').css("display", "none");
+			$('ul .leguminosas').css("display", "none");
+			$('ul .inverno').css("display", "block");
+		}
+	});
 
 	$('.form-control').blur(function(){
 		var conteudo = $(this).val().length;
