@@ -298,7 +298,7 @@ section#product {
 }
 .owl-carousel a.active {
    border-bottom: 2px solid #319B42;
-   /*padding-bottom: 0px;*/
+   padding-bottom: 3px;
 }
 .owl-carousel div {
    width: auto;
