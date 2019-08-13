@@ -62,14 +62,14 @@ $(document).ready(function(){
 			$(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
 			$(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
-			$(this).find('.barraTop').css("top", "10px");
+			$(this).find('.barraTop').css("top", "12px");
 			$(this).find('.barraTop').css("background-color", "#319B42");
 			$(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
 			$(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
 			$(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("background-color", "#319B42");
-			$(this).find('.barraBot').css("bottom", "10px");
+			$(this).find('.barraBot').css("bottom", "8px");
 		}
 	});
 	$('a.navbarRestante').click(function(){
