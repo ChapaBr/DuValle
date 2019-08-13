@@ -39,9 +39,15 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "block");
 			$('.nav-item a.nav-link').css('color', '#FFF');
 			$(this).find('.barraMid').css("background-color", "#FFF");
+			$(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			$(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
+			$(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(0deg)");
 			$(this).find('.barraTop').css("background-color", "#FFF");
 			$(this).find('.barraTop').css("top", "6px");
+			$(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			$(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
+			$(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(0deg)");
 			$(this).find('.barraBot').css("background-color", "#FFF");
 			$(this).find('.barraBot').css("bottom", "0px");
@@ -52,9 +58,15 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "none");
 			$('.nav-item a.nav-link').css('color', 'rgba(0, 0, 0, .87)');
 			$(this).find('.barraMid').css("background-color", "transparent");
+			$(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
+			$(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
+			$(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
 			$(this).find('.barraTop').css("top", "10px");
 			$(this).find('.barraTop').css("background-color", "#319B42");
+			$(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
+			$(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
+			$(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("background-color", "#319B42");
 			$(this).find('.barraBot').css("bottom", "10px");
