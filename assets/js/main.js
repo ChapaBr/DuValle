@@ -65,7 +65,7 @@ $(document).ready(function(){
 		}
 	});
 	$('a.navbarHome').click(function(){
-		if($('div#navbarNavDropdown').hasClass('show')){
+		if($('div#conteudoNavbarSuportado').hasClass('show')){
 			$('nav.navbar').css("background-color", "rgba(29, 35, 30, .36)");
 			$('.navbar-brand img').attr("src", "assets/imgs/icons/white/logo-icon-white.svg");
 			$('.navbar-brand img').css("width", "24px");

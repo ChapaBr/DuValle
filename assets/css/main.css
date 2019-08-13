@@ -104,6 +104,16 @@ li.nav-item p.navbarCopy {
 nav.navbar.white {
    padding: 16px  24px;
    background-color: rgba(29, 35, 30, .36);
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+}
+@media(min-width: 769){
+   nav.navabr {
+      
+   }
 }
 .navbar-brand{
    padding: 0;
