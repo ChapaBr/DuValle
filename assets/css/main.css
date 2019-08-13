@@ -294,7 +294,11 @@ section#product {
 }
 .owl-item {
    width: auto !important;
-   margin: 0 13.5px;
+   margin-right: 27px;
+}
+.owl-carousel a.active {
+   border-bottom: 2px solid #319B42;
+   padding-bottom: 3px;
 }
 .owl-carousel div {
    width: auto;

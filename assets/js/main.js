@@ -6,7 +6,10 @@ $(document).ready(function(){
     responsive: true,
     responsive:{
         0:{
-            items:2
+            items:1
+        },
+        360:{
+        	items: 2
         },
         600:{
             items:3
@@ -20,18 +23,26 @@ $(document).ready(function(){
 	$('.owl-carousel a').click(function(){
 		var typeItem = $(this).attr('rel');
 		if(typeItem === 'todos'){
+			$('.owl-carousel a').removeClass('active');
+			$(this).addClass('active');
 			$('.productsItem').css("display", "block");
 		} else if(typeItem === 'verao'){
+			$('.owl-carousel a').removeClass('active');
+			$(this).addClass('active');
 			$('ul .productsItem').css("display", "none");
 			$('ul .verao').css("display", "block");
 			$('ul .leguminosas').css("display", "none");
 			$('.productsList .inverno').css("display", "none");
 		} else if(typeItem === 'leguminosas'){
+			$('.owl-carousel a').removeClass('active');
+			$(this).addClass('active');
 			$('ul .verao').css("display", "none");
 			$('ul .productsItem').css("display", "none");
 			$('ul .leguminosas').css("display", "block");
 			$('ul .inverno').css("display", "none");
 		} else if(typeItem === 'inverno'){
+			$('.owl-carousel a').removeClass('active');
+			$(this).addClass('active');
 			$('ul .verao').css("display", "none");
 			$('ul .productsItem').css("display", "none");
 			$('ul .leguminosas').css("display", "none");
