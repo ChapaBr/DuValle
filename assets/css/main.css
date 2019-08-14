@@ -81,7 +81,7 @@ a.btnGreenHome:active {
    z-index: 1030;
    bottom: 20%;
 }
-@media(min-width: 1024px){
+@media(min-width: 1280px){
    .imageHomeMobile {
       background-image: none;
    }
@@ -324,7 +324,16 @@ section#information {
    top: 180px;
    z-index: 9;
 }
-
+@media(max-width: 768px){
+   .infomationDesktop {
+      display: none;
+   }
+}
+@media(min-width: 1024px){
+   .informationMobile {
+      display: none;
+   }
+}
 /* Pag Products */
 section#products {
    padding-top: 69px;
