@@ -185,8 +185,15 @@ li.itemNav {
    ul.navbar-nav {
       height: 100vh;
    }
+   img.logoMobilehome {
+      display: block;
+   }
    img.logoMobile {
       display: block;
+      width: 125px;
+   }
+   img.logoDesktopHome {
+      display: none;
    }
    img.logoDesktop {
       display: none;
@@ -208,7 +215,14 @@ li.itemNav {
       font-size: 14px;
       padding-top: 22px;
    }
-   img.logoDesktop {
+   img.logoMobileHome {
+      display: none;
+   }
+   img.logoMobile {
+      display: block;
+      width: 125px;
+   }
+   img.logoDesktopHome {
       display: block;
       width: 125px;
    }
