@@ -28,7 +28,7 @@ body {
    border: 0;
 }
 
-section#home {
+.imageHomeMobile {
    background-image: url('../imgs/background/background-home.jpg');
    background-size: cover;
    background-repeat: no-repeat;
@@ -82,8 +82,21 @@ a.btnGreenHome:active {
    bottom: 20%;
 }
 @media(min-width: 1024px){
-   section#home {
+   .imageHomeMobile {
       background-image: none;
+   }
+   .contentHome {
+      left: 10vh;
+   }
+   .titleHome {
+      font-weight: 700;
+      font-size: 56px;
+      color: rgba(0, 0, 0, .87);
+   }
+   .contentHome p {
+      font-size: 17px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, .56);
    }
    .imgDesktop {
       background-image: url('../imgs/background/background-home.jpg');
