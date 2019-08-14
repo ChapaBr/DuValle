@@ -110,11 +110,6 @@ nav.navbar.white {
    left: 0;
    z-index: 1030;
 }
-@media(min-width: 769){
-   nav.navabr {
-      
-   }
-}
 .navbar-brand{
    padding: 0;
    margin: 0;
@@ -140,17 +135,65 @@ li.itemNav {
    padding: 0;
    margin: 0;
 }
+@media(max-width: 768px){
+
+}
+@media(min-width: 1024px){
+   nav.navbar.white {
+      background-color: #FFF;
+   }
+   li.nav-item img {
+      padding-top: 22px;
+      margin: 0 20px;
+      width: 20px;
+   }
+}
 /* DropDown Navbar White Items*/
-ul.navbar-nav {
-   height: 100vh;
-}
-.navbar-light .navbar-nav .nav-link.white{
-   font-size: 17px;
-   color: #FFF;
-   padding-top: 33.5px;
-}
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
    color: #319B42;
+}
+@media(max-width: 768px){
+   .navbar-light .navbar-nav .nav-link.white{
+      font-size: 17px;
+      color: #FFF;
+      padding-top: 33.5px;
+   }
+   ul.navbar-nav {
+      height: 100vh;
+   }
+   img.logoMobile {
+      display: block;
+   }
+   img.logoDesktop {
+      display: none;
+   }
+}
+@media(min-width: 1024px){
+   a.nav-link {
+      color: rgba(0, 0, 0, .87);
+   }
+   li.navContato {
+      position: relative;
+      right: auto;
+      left: auto;
+      z-index: 0;
+      bottom: 0;
+   }
+   .navbar-light .navbar-nav .nav-link.white {
+      padding-right: 42px;
+      font-size: 14px;
+      padding-top: 22px;
+   }
+   img.logoDesktop {
+      display: block;
+      width: 125px;
+   }
+   p.navbarCopy {
+      display: none;
+   }
+   img.logoMobile {
+      display: none;
+   }
 }
 
 /* Navbar Green Items */
