@@ -345,6 +345,9 @@ section#information {
    }
 }
 @media(min-width: 1024px){
+   #home .row {
+      max-width: 100%;
+   }
    .informationMobile {
       display: none;
    }
