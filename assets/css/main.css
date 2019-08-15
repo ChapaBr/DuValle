@@ -239,6 +239,11 @@ li.itemNav {
 nav.navbar.green {
    padding: 16px  24px;
    background-color: #FFF;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
 }
 .navbar-light .navbar-nav .nav-link.green{
    font-size: 17px;
