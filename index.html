@@ -195,11 +195,11 @@
 			</div>
 			<div class="col-6 col-md-6 col-xl-6">
 				<h2 class="titleContent">Contato</h2>
-				<form>
+				<form action="enviar.php" method="POST">
 				  	<div class="form-row">
 					    <div class="form-group col-12">
 						  <label class="txtLabelForm" for="inputName">Nome</label>
-						  <input type="text" class="form-control inputDefault" id="inputName" placeholder="Maria Inc">
+						  <input type="text" class="form-control inputDefault" id="inputName" name="nome" placeholder="Maria Inc">
 						  <div class="invalid-feedback">
 					        Campo obrigatório
 					      </div>
@@ -208,7 +208,7 @@
 					<div class="form-row">
 					  	<div class="form-group col-12">
 					      	<label class="txtLabelForm" for="inputTel">Telefone</label>
-					      	<input type="tel" class="form-control inputDefault" id="inputTel" placeholder="(11)445-4534">
+					      	<input type="tel" class="form-control inputDefault" id="inputTel" name="telefone" placeholder="(11)445-4534">
 					      	<div class="invalid-feedback">
 					        	Campo obrigatório
 					      	</div>
@@ -217,7 +217,7 @@
 				  	<div class="form-row">
 					    <div class="form-group col-12">
 					      	<label class="txtLabelForm" for="inputlEmail">E-mail</label>
-					      	<input type="email" class="form-control inputDefault" id="inputEmail" placeholder="email@email.com">
+					      	<input type="email" class="form-control inputDefault" id="inputEmail" name="email" placeholder="email@email.com">
 					      	<div class="invalid-feedback">
 					        	Campo obrigatório
 					      	</div>
@@ -225,7 +225,7 @@
 					</div>
 				  	<div class="form-group">
 				    	<label class="txtLabelForm" for="exampleFormControlTextarea1">Mensagem</label>
-				    	<textarea class="form-control inputDefault" id="exampleFormControlTextarea1" rows="3"></textarea>
+				    	<textarea class="form-control inputDefault" id="exampleFormControlTextarea1" name="mensagem" rows="3"></textarea>
 				  	</div>
 				  	<div class="form-group text-center">
 				  		<button type="submit" class="btnSendForm">Enviar</button>
