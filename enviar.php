@@ -20,17 +20,17 @@ try {
     //Server settings
     $mail->SMTPDebug = 0;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+    $mail->Host       = 'mail.duvalle.agr.br';                  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'devnathan45@gmail.com';                     // SMTP username
-    $mail->Password   = 'nicolas1408';                               // SMTP password
+    $mail->Username   = 'contato@duvalle.agr.br';               // SMTP username
+    $mail->Password   = '102030@@';                             // SMTP password
     $mail->SMTPSecure = 'ssl';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('devnathan45@gmail.com', 'Teste de email'); //aqui vc coloca o email do cliente 
-    $mail->addAddress('devnathan45@gmail.com', 'Joe User');     // Add a recipient
-    $mail->addReplyTo('devnathan45@gmail.com', 'Information');
+    $mail->setFrom('contato@duvalle.agr.br', 'Teste de email'); //aqui vc coloca o email do cliente 
+    $mail->addAddress('contato@duvalle.agr.br', 'Joe User');     // Add a recipient
+    $mail->addReplyTo('contato@duvalle.agr.br', 'Information');
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
