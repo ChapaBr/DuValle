@@ -585,7 +585,9 @@ section#partner {
    color: #FFF;
 }
 @media(max-width: 768px){
-
+   .parceiroDesktop iframe {
+      min-height: auto;
+   }
 }
 @media(min-width: 1024px){
    section#partner {
@@ -593,6 +595,9 @@ section#partner {
    }
    .parceiroDesktop {
       margin: 0 auto;
+   }
+   .parceiroDesktop iframe {
+      min-height: 400px;
    }
 }
 
