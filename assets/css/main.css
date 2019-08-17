@@ -591,6 +591,9 @@ section#partner {
    section#partner {
       padding-top: 100px;
    }
+   .parceiroDesktop {
+      margin: 0 auto;
+   }
 }
 
 /* Footer */
