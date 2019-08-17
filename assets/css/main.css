@@ -191,7 +191,6 @@ li.itemNav {
    }
    img.logoMobile {
       display: block;
-      width: 125px;
    }
    img.logoDesktopHome {
       display: none;
@@ -220,17 +219,14 @@ li.itemNav {
       display: none;
    }
    img.logoMobile {
-      display: block;
-      width: 125px;
+      display: none;
    }
-   img.logoDesktopHome {
+   img.logoDesktopHome,
+   img.logoDesktop {
       display: block;
       width: 125px;
    }
    p.navbarCopy {
-      display: none;
-   }
-   img.logoMobile {
       display: none;
    }
 }
@@ -430,6 +426,9 @@ button.btnGreen {
 
 }
 @media(min-width: 1024px){
+   section#products {
+      padding-top: 100px;
+   }
    .productsItem {
       width: 33%;
       display: inline-block;
@@ -572,6 +571,14 @@ section#partner {
    border-radius: 10px;
    border: 1px solid #319B42;
    color: #FFF;
+}
+@media(max-width: 768px){
+
+}
+@media(min-width: 1024px){
+   section#partner {
+      padding-top: 100px;
+   }
 }
 
 /* Footer */
