@@ -433,6 +433,18 @@ button.btnGreen {
       width: 33%;
       display: inline-block;
    }
+   .filtroDesktop {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 16px 0 32px 0;
+   }
+   .filtroActive {
+      background-color: #319B42;
+      padding: 10px 25px;
+      border-radius: 10px;
+      color: #FFF !important;
+   }
 }
 /* Product */
 section#product {
@@ -586,10 +598,6 @@ h3.titleFooter {
    font-size: 22px;
    color: #319B42;
 }
-p.textFooter {
-   color: rgba(0, 0, 0, .56);
-   font-size: 14px;
-}
 ul.footerList {
    list-style: none;
    padding: 0;
@@ -644,6 +652,10 @@ p.textFooterLine {
    }
    .footerDesktop {
       display: block;
+   }
+   .ondeEstamos {
+      margin-top: 32px;
+      margin-bottom: 88px;
    }
 }
 /* Media Map */

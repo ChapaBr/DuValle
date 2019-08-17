@@ -50,6 +50,37 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.filtroDesktop a').click(function(){
+		var typeItem = $(this).attr('rel');
+		if(typeItem === 'todos'){
+			$('.filtroDesktop a').removeClass('filtroActive');
+			$(this).addClass('filtroActive');
+			$('.productsItem').css("display", "inline-block");
+		} else if(typeItem === 'verao'){
+			$('.filtroDesktop a').removeClass('filtroActive');
+			$(this).addClass('filtroActive');
+			$('ul .productsItem').css("display", "none");
+			$('ul .verao').css("display", "inline-block");
+			$('ul .leguminosas').css("display", "none");
+			$('.productsList .inverno').css("display", "none");
+		} else if(typeItem === 'leguminosas'){
+			$('.filtroDesktop a').removeClass('filtroActive');
+			$(this).addClass('filtroActive');
+			$('ul .verao').css("display", "none");
+			$('ul .productsItem').css("display", "none");
+			$('ul .leguminosas').css("display", "inline-block");
+			$('ul .inverno').css("display", "none");
+		} else if(typeItem === 'inverno'){
+			$('.filtroDesktop a').removeClass('filtroActive');
+			$(this).addClass('filtroActive');
+			$('ul .verao').css("display", "none");
+			$('ul .productsItem').css("display", "none");
+			$('ul .leguminosas').css("display", "none");
+			$('ul .inverno').css("display", "inline-block");
+		}
+	});
+
+
 	$('.form-control').blur(function(){
 		var conteudo = $(this).val().length;
 		if(conteudo <= 0){
