@@ -348,6 +348,9 @@ section#information {
    .infomationDesktop {
       display: none;
    }
+   .informationMobile {
+      display: unset;
+   }
 }
 @media(min-width: 1024px){
    #home .row {
