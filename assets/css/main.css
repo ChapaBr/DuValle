@@ -423,6 +423,15 @@ button.btnGreen {
    border: none;
    text-decoration: none;
 }
+@media(max-width: 768px){
+
+}
+@media(min-width: 1024px){
+   .productsItem {
+      width: 33%;
+      display: inline-block;
+   }
+}
 /* Product */
 section#product {
    padding-top: 69px;
