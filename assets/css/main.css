@@ -366,19 +366,19 @@ section#information {
       height: auto;
    }
    .seedsVisao {
-      width: 400px;
+      width: 390px;
       height: auto;
    }
    .seedsMissao {
-      width: 400px;
+      width: 390px;
       height: auto;
       left: -100px;
       top: 160px;
    }
    .seedsValores{
-      width: 581px;
+      width: 560px;
       height: auto;
-      right: -50px;
+      right: -80px;
       top: 120px;
    }
 }
