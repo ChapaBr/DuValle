@@ -348,6 +348,9 @@ section#information {
    .infomationDesktop {
       display: none;
    }
+   .informationMobile {
+      display: unset;
+   }
 }
 @media(min-width: 1024px){
    #home .row {
@@ -422,6 +425,15 @@ h2.titleContent {
 button.btnGreen {
    border: none;
    text-decoration: none;
+}
+@media(max-width: 768px){
+
+}
+@media(min-width: 1024px){
+   .productsItem {
+      width: 33%;
+      display: inline-block;
+   }
 }
 /* Product */
 section#product {
@@ -615,7 +627,7 @@ p.textFooterLine {
    .footerMobile {
       display: block;
    }
-   .footerDektop {
+   .footerDesktop {
       display: none;
    }
 }
@@ -623,7 +635,7 @@ p.textFooterLine {
    .footerMobile {
       display: none;
    }
-   .footerDektop {
+   .footerDesktop {
       display: block;
    }
 }
