@@ -624,7 +624,7 @@ p.textFooterLine {
    .footerMobile {
       display: block;
    }
-   .footerDektop {
+   .footerDesktop {
       display: none;
    }
 }
@@ -632,7 +632,7 @@ p.textFooterLine {
    .footerMobile {
       display: none;
    }
-   .footerDektop {
+   .footerDesktop {
       display: block;
    }
 }
