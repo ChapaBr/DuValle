@@ -65,6 +65,10 @@ a.btnGreenHome {
    position: absolute;
    font-weight: 700;
 }
+.zeraPM {
+   padding: 0;
+   margin: 0;
+}
 a.btnGreenHome:hover {
    background-color: #36CB4E;
 }
@@ -168,7 +172,7 @@ li.itemNav {
       background-color: #FFF;
    }
    li.nav-item img {
-      padding-top: 22px;
+      padding-top: 10px;
       margin: 0 20px;
       width: 20px;
    }
@@ -191,7 +195,6 @@ li.itemNav {
    }
    img.logoMobile {
       display: block;
-      width: 125px;
    }
    img.logoDesktopHome {
       display: none;
@@ -211,26 +214,28 @@ li.itemNav {
       z-index: 0;
       bottom: 0;
    }
-   .navbar-light .navbar-nav .nav-link.white {
+   .navbar-nav .nav-item .nav-link {
+      padding: 7px 0 2px 0;
+   }
+   .navbar-nav .active .nav-link {
+      border-bottom: 2px solid #319B42;
+   }
+   .navbar-light .navbar-nav .nav-item {
       padding-right: 42px;
       font-size: 14px;
-      padding-top: 22px;
    }
    img.logoMobileHome {
       display: none;
    }
    img.logoMobile {
-      display: block;
-      width: 125px;
+      display: none;
    }
-   img.logoDesktopHome {
+   img.logoDesktopHome,
+   img.logoDesktop {
       display: block;
       width: 125px;
    }
    p.navbarCopy {
-      display: none;
-   }
-   img.logoMobile {
       display: none;
    }
 }
@@ -249,9 +254,6 @@ nav.navbar.green {
    font-size: 17px;
    color: #000;
    padding-top: 33.5px;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-   color: #319B42;
 }
 
 /* Content Home */
@@ -366,23 +368,23 @@ section#information {
       margin: auto;
    }
    .imgHome {
-      width: 444px;
+      width: 420px;
       height: auto;
    }
    .seedsVisao {
-      width: 411px;
+      width: 390px;
       height: auto;
    }
    .seedsMissao {
-      width: 411px;
+      width: 390px;
       height: auto;
       left: -100px;
       top: 160px;
    }
    .seedsValores{
-      width: 592px;
+      width: 560px;
       height: auto;
-      right: -50px;
+      right: -80px;
       top: 120px;
    }
 }
@@ -430,9 +432,24 @@ button.btnGreen {
 
 }
 @media(min-width: 1024px){
+   section#products {
+      padding-top: 100px;
+   }
    .productsItem {
       width: 33%;
       display: inline-block;
+   }
+   .filtroDesktop {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 16px 0 32px 0;
+   }
+   .filtroActive {
+      background-color: #319B42;
+      padding: 10px 25px;
+      border-radius: 10px;
+      color: #FFF !important;
    }
 }
 /* Product */
@@ -573,15 +590,30 @@ section#partner {
    border: 1px solid #319B42;
    color: #FFF;
 }
+@media(max-width: 768px){
+   .parceiroDesktop iframe {
+      min-height: auto;
+   }
+}
+@media(min-width: 1024px){
+   section#partner {
+      padding-top: 100px;
+   }
+   .parceiroDesktop {
+      margin: 0 auto;
+   }
+   .parceiroDesktop iframe {
+      min-height: 400px;
+   }
+   section#product {
+      padding-top: 100px;
+   }
+}
 
 /* Footer */
 h3.titleFooter {
    font-size: 22px;
    color: #319B42;
-}
-p.textFooter {
-   color: rgba(0, 0, 0, .56);
-   font-size: 14px;
 }
 ul.footerList {
    list-style: none;
@@ -623,6 +655,13 @@ p.textFooterLine {
 .botaoFixo {
    position: fixed;
 }
+.footerCopy {
+   color:rgba(0, 0, 0, .56);
+   font-size: 14px;
+   margin: 10px 0;
+   border-top: 0.5px solid #C1C1C1;
+   padding-top: 10.5px;
+}
 @media(max-width: 768px){
    .footerMobile {
       display: block;
@@ -637,6 +676,55 @@ p.textFooterLine {
    }
    .footerDesktop {
       display: block;
+   }
+   .ondeEstamos {
+      margin-top: 32px;
+      margin-bottom: 88px;
+   }
+   .imgFooter {
+      background-image: url('../imgs/background/footer.png');
+      width: 100%;
+      height: 423px;
+      background-repeat: no-repeat;
+      text-align: center;
+      background-size: cover;
+   }
+   .footerText {
+      position: relative;
+      top: 50%;
+      font-size: 32px;
+      font-weight: 700;
+      color:#FFF;
+   }
+   .footerLogo {
+      width: 124px;
+      position: absolute;
+      bottom: 23px;
+      right: 60px;
+   }
+   .footerCaixaLogos {
+      margin: 76px auto 67px auto;
+   }
+   .listFooter {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+   }
+   .footerItemPadding {
+      padding: 15px 24px 35px 0px;
+   }
+   img.footerImage {
+      width: 21px;
+   }
+   ul.navFooter {
+      list-style: none;
+   }
+   a.navFooter {
+      color: rgba(0, 0, 0, .57);
+   }
+   .footerActive {
+      color: rgba(0, 0, 0, .87);
    }
 }
 /* Media Map */
