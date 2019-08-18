@@ -168,7 +168,7 @@ li.itemNav {
       background-color: #FFF;
    }
    li.nav-item img {
-      padding-top: 22px;
+      padding-top: 10px;
       margin: 0 20px;
       width: 20px;
    }
@@ -210,10 +210,15 @@ li.itemNav {
       z-index: 0;
       bottom: 0;
    }
-   .navbar-light .navbar-nav .nav-link.white {
+   .navbar-nav .nav-item .nav-link {
+      padding: 7px 0 2px 0;
+   }
+   .navbar-nav .active .nav-link {
+      border-bottom: 2px solid #319B42;
+   }
+   .navbar-light .navbar-nav .nav-item {
       padding-right: 42px;
       font-size: 14px;
-      padding-top: 22px;
    }
    img.logoMobileHome {
       display: none;
@@ -245,9 +250,6 @@ nav.navbar.green {
    font-size: 17px;
    color: #000;
    padding-top: 33.5px;
-}
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-   color: #319B42;
 }
 
 /* Content Home */
