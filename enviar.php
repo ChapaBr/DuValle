@@ -19,7 +19,8 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->SMTPDebug = 0;                                       // Enable verbose debug output
-    $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->isSMTP();  
+    $mail->CharSet = 'UTF-8';                                          // Set mailer to use SMTP
     $mail->Host       = 'mail.duvalle.agr.br';                  // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'contato@duvalle.agr.br';               // SMTP username
