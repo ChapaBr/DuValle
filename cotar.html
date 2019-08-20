@@ -10,6 +10,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="DuValle">
 	<meta property="og:site_name" content="DuValle">
+	<link rel="icon" href="assets/imgs/logos/favicon.png">
 	<!-- Bootstrap -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- CSS Main -->
@@ -71,8 +72,14 @@
 					<label class="txtLabelForm">Tipo</label>
 				  <div class="form-row">
 				    <div class="form-group col-12">
-				      <button type="button" value="fisica" class="btnFisica active" id="inputTipo">Pessoa Física</button>
-				      <button type="button" value="juridica" class="btnJuridica" id="inputTipo">Pessoa Jurídica</button>
+				    	<label class="btnFisicaLabel tipoClick buttonVerde" id="sla1">
+				    		Pessoa Física
+				    		<input type="radio" name="tipo" value="Pessoa Física" class="btnFisica active" id="pessoaFisica" required="tipo" checked>
+				    	</label>
+				      	<label class="btnJuridicaLabel tipoClick" id="sla2">
+				      		Pessoa Jurídica
+				      		<input type="radio" name="tipo" value="Pessoa Jurídica" class="btnJuridica" id="pessoaJuridica" required="tipo">
+						</label>
 				    </div>
 				  </div>
 				  <div class="form-row">
@@ -168,7 +175,7 @@
 				      </div>
 				    </div>
 				  </div>
-				  <h3 style="color: #000;">Semente 1</h3>
+				  <h3 class="titleContent">Semente 1</h3>
 				  <div class="form-row">
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputSemente1">Nome da semente</label>
@@ -178,43 +185,44 @@
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
-				      <label class="txtLabelForm" for="areaPlantio1">Area de Plantio</label>
-				      <input type="number" class="form-control inputDefault" id="areaPlantio1" name="semente2" placeholder="Area de Plantio">
+				      <label class="txtLabelForm" for="areaPlantio1">Area de Plantio<sub>(HA)</sub></label>
+				      <input type="number" class="form-control inputDefault" id="areaPlantio1" name="area1" placeholder="Area de Plantio">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
-				  		<label class="txtLabelForm" for="quantSemente1">Quantidade</label>
-				  		<input type="number" class="form-control inputDefault" id="quantSemente1" placeholder="Quantidade">
+				  		<label class="txtLabelForm" for="quantSemente1">Quantidade<sub>(KG)</sub></label>
+				  		<input type="number" class="form-control inputDefault" id="quantSemente1" name="quant1" placeholder="Quantidade">
 				  	</div>
 				  </div>
-				  <h3 style="color: #000;">Semente 2</h3>
+				  <h3 class="titleContent">Semente 2</h3>
 				  <div class="form-row">
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputSemente2">Nome da semente</label>
-				      <input type="text" class="form-control inputDefault" id="inputSemente2" placeholder="Nome da semente">
+				      <input type="text" class="form-control inputDefault" id="inputSemente2" name="semente2" placeholder="Nome da semente">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
-				      <label class="txtLabelForm" for="areaPlantio2">Area de Plantio</label>
-				      <input type="number" class="form-control inputDefault" id="areaPlantio2" placeholder="Area de Plantio">
+				      <label class="txtLabelForm" for="areaPlantio2">Area de Plantio<sub>(HA)</sub></label>
+				      <input type="number" class="form-control inputDefault" id="areaPlantio2" name="area2" placeholder="Area de Plantio">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
-				  		<label class="txtLabelForm" for="quantSemente2">Quantidade</label>
-				  		<input type="number" class="form-control inputDefault" id="quantSemente2" placeholder="Quantidade">
+				  		<label class="txtLabelForm" for="quantSemente2">Quantidade<sub>(KG)</sub></label>
+				  		<input type="number" class="form-control inputDefault" id="quantSemente2" name="quant2" placeholder="Quantidade">
 				  	</div>
 				  </div>
 				  <div class="form-row">
+				  	<span class="txtRural">Possui Inscrição de Produtor Rural?</span>
 				  	<div class="form-group col-12 text-center">
-				  		<input id="ruralSim" name="rural" type="radio" value="sim" placeholder="Sim">
+				  		<input id="ruralSim" name="rural" type="radio" value="Sim" placeholder="Sim" required="ruralSim">
 				  		<label class="txtLabelForm" for="ruralSim">Sim</label>
-				  		<input id="ruralNao" name="rural" type="radio" value="nao" placeholder="Não">
+				  		<input id="ruralNao" name="rural" type="radio" value="Não" placeholder="Não" required="ruralNao">
 				  		<label class="txtLabelForm" for="ruralNao">Não</label>
 				  	</div>
 				  </div>

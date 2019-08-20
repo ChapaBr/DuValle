@@ -194,6 +194,15 @@ $(document).ready(function(){
 			$(this).find('.barraBot').css("bottom", "10px");
 		}
 	});
+	$('.tipoClick').click(function(){
+		if($("#pessoaFisica").is(":checked")) {
+			$('.btnJuridicaLabel').removeClass('buttonVerde');
+			$('.btnFisicaLabel').addClass('buttonVerde');
+		} else {
+			$('.btnFisicaLabel').removeClass('buttonVerde');
+			$('.btnJuridicaLabel').addClass('buttonVerde');
+		}
+	});
 	var tamanhoFooter = $('#footer').offset().top;
 	var tamanhoBot = 0;
 	$(window).scroll(function(){

@@ -401,6 +401,16 @@ h2.titleContent {
    font-weight: 700;
    color: rgba(0, 0, 0, .87);
 }
+h3.titleContent {
+   color: rgba(0, 0, 0, .87);
+   font-size: 20px;
+   font-weight: 700;
+}
+.txtRural {
+   color: rgba(0, 0, 0, .87);
+   margin: 0 auto;
+   font-size: 16px;
+}
 .btnFilter {
    color: #FFF;
    padding: 6px 30px;
@@ -524,6 +534,13 @@ section#product {
    font-size: 17px;
    color: #319B42;
 }
+.btnReturn:hover {
+   color: #319B42;
+}
+.btnReturn:active {
+   color: #000;
+   border-bottom: 2px solid #319B42;
+}
 div.product {
    position: fixed;
    bottom: 0;
@@ -540,7 +557,7 @@ section#partner {
    font-size: 14px;
    font-weight: 500;
 }
-.btnFisica {
+/*.btnFisica {
    width: 50%;
    float: left;
    border-radius: 10px 0 0 10px;
@@ -549,8 +566,54 @@ section#partner {
    border: 1px solid #319B42;
    border-right: 0;
    height: 44px;
+}*/
+.btnFisicaLabel {
+   width: 49%;
+   float: left;
+   cursor: pointer;
+   text-align: center;
+   padding: 12px 80px;
+   border-radius: 10px 0 0 10px;
+   border: 2px solid #319B42;
+   color: #000;
+   background-color: #FFF;
+}
+.btnJuridicaLabel {
+   width: 51%;
+   cursor: pointer;
+   text-align: center;
+   float: right;
+   padding: 12px 80px;
+   border-radius: 0 10px 10px 0;
+   border: 2px solid #319B42;
+   color: #000;
+   background-color: #FFF;
+}
+.btnFisica {
+   text-align: center;
+   left: 0;
+   position: absolute;
+   width: 49%;
+   background-color: #319B42;
+   padding: auto;
+   height: 90%;
+   visibility: hidden;
+   top: 0;
 }
 .btnJuridica {
+   text-align: center;
+   right: 0;
+   position: absolute;
+   width: 51%;
+   height: 90%;
+   visibility: hidden;
+   top: 0;
+}
+.buttonVerde {
+   color: #fff;
+   background-color: #319B42;
+}
+/*.btnJuridica {
    width: 50%;
    float: right;
    border-radius: 0 10px 10px 0;
@@ -559,7 +622,7 @@ section#partner {
    border: 1px solid #319B42;
    border-left: none;
    height: 44px;
-}
+}*/
 .inputDefault {
    border: 1px solid #707070;
    border-radius: 10px;
