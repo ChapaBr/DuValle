@@ -74,29 +74,36 @@
 				    <div class="form-group col-12">
 				    	<label class="btnFisicaLabel tipoClick buttonVerde" id="sla1">
 				    		Pessoa Física
-				    		<input type="radio" name="tipo" value="Pessoa Física" class="btnFisica active" id="pessoaFisica" required="tipo" checked>
+				    		<input type="radio" name="tipo" value="Física" class="btnFisica active" id="pessoaFisica" required="tipo" checked>
 				    	</label>
 				      	<label class="btnJuridicaLabel tipoClick" id="sla2">
 				      		Pessoa Jurídica
-				      		<input type="radio" name="tipo" value="Pessoa Jurídica" class="btnJuridica" id="pessoaJuridica" required="tipo">
+				      		<input type="radio" name="tipo" value="Jurídica" class="btnJuridica" id="pessoaJuridica" required="tipo">
 						</label>
 				    </div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-12">
-					  <label class="txtLabelForm" for="inputName">Nome</label>
-					  <input type="text" class="form-control inputDefault" id="inputName" name="nome" placeholder="Maria Inc" required="inputName">
+					  <label class="txtLabelForm" for="inputName" id="labelNome">Nome</label>
+					  <input type="text" class="form-control inputDefault" id="inputName" name="nome" placeholder="Jorge" required="inputName">
 					  <div class="invalid-feedback">
 				        Nome obrigatório
 				      </div>
 					</div>
 				  	<div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputTel">Telefone</label>
-				      <input type="tel" class="form-control inputDefault" id="inputTel" name="telefone" placeholder="(11)445-4534" required="inputTel">
+				      <input type="tel" class="form-control inputDefault telMask" id="inputTel" name="telefone" placeholder="(11)445-4534" required="inputTel">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				  	</div>
+				  	<div class="form-group col-12">
+				      <label class="txtLabelForm" for="inputlDado" id="labelDado">CPF</label>
+				      <input id="inputDado" type="email" class="form-control inputDefault" name="cpf" placeholder="000.000.000-00" required="inputDado">
+				      <div class="invalid-feedback">
+				        Campo obrigatório
+				      </div>
+				    </div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-12">
@@ -108,7 +115,7 @@
 				    </div>
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputCep">CEP</label>
-				      <input type="number" class="form-control inputDefault" id="inputCep" name="cep" placeholder="09865-670" required="inputCep">
+				      <input type="text" class="form-control inputDefault cepMask" id="inputCep" name="cep" placeholder="09865-670" required="inputCep">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
@@ -169,7 +176,7 @@
 				    </div>
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputNumero">Numero</label>
-				      <input type="text" class="form-control inputDefault" id="inputNumero" name="numero" placeholder="5040" required="inputNumero">
+				      <input type="number" class="form-control inputDefault" id="inputNumero" name="numero" placeholder="5040" required="inputNumero">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
@@ -181,7 +188,7 @@
 					    <textarea class="form-control inputDefault" id="inputMensagem" name="mensagem" rows="3" placeholder="Mensagem.."></textarea>
 					</div>
 					<div class="form-group col-12 text-center">
-						<button type="submit" class="btnSendForm">Enviar</button>
+						<button type="submit" class="btnSendForm buttonPadrao">Enviar</button>
 					</div>
 				  	</div>
 				</form>
@@ -300,6 +307,8 @@
 <!-- Bootstrap -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Jquery Mask -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha256-Kg2zTcFO9LXOc7IwcBx1YeUBJmekycsnTsq2RuFHSZU=" crossorigin="anonymous"></script>
 <!-- Main Script -->
 <script type="text/javascript" src="assets/js/main.js"></script>
   

@@ -194,13 +194,33 @@ $(document).ready(function(){
 			$(this).find('.barraBot').css("bottom", "10px");
 		}
 	});
+	$('.cepMask').mask('00000-000');
+	$('.telMask').mask('(00)0000-0000');
+	$('.cpfMask').mask('000.000.000-00');
+	$('.cnpjMask').mask('00.000.000/0000-00');
 	$('.tipoClick').click(function(){
 		if($("#pessoaFisica").is(":checked")) {
 			$('.btnJuridicaLabel').removeClass('buttonVerde');
 			$('.btnFisicaLabel').addClass('buttonVerde');
+			$('#inputDado').removeClass('cnpjMask');
+			$('#inputDado').addClass('cpfMask');
+			$('#labelDado').text('CPF');
+			$('#labelNome').text('Nome');
+			$('#inputName').attr({placeholder:"Jorge"});
+			$('#inputName').attr('name', 'nome');
+			$('#inputDado').attr({placeholder:"000.000.000-00"});
+			$('#inputDado').attr('name', 'cpf');
 		} else {
 			$('.btnFisicaLabel').removeClass('buttonVerde');
 			$('.btnJuridicaLabel').addClass('buttonVerde');
+			$('#inputDado').removeClass('cpfMask');
+			$('#inputDado').addClass('cnpjMask');
+			$('#labelNome').text('Razão Social');
+			$('#inputName').attr({placeholder:"Maria Inc"});
+			$('#inputName').attr('name', 'razao');
+			$('#labelDado').text('CNPJ');
+			$('#inputDado').attr({placeholder:"00.000.000/0000-00"});
+			$('#inputDado').attr('name', 'cnpj');
 		}
 	});
 	var tamanhoFooter = $('#footer').offset().top;

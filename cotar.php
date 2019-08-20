@@ -8,8 +8,11 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
+$tipo = $_POST['tipo'];
 $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
+$cpf = $_POST['cpf'];
+$cnpj = $_POST['cnpj'];
 $email = $_POST['email'];
 $cep = $_POST['cep'];
 $cidade = $_POST['cidade'];
@@ -46,7 +49,11 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Contato - Home';
-    $mail->Body    = "Nome: ".$nome."<br> Telefone: ".$telefone."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Semente 1: ".$semente1."<br> Area Semente 1: ".$area1."<br> Quantidade Semente 1: ".$quant1."<br> Semente 2: ".$semente2."<br> Area Semente 2: ".$area2."<br> Quantidade Semente 2: ".$quant2."<br> Produtor Rural? ".$rural;
+    if(isset($cpf)){
+        $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CPF: ".$cpf."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Semente 1: ".$semente1."<br> Area Semente 1: ".$area1."<br> Quantidade Semente 1: ".$quant1."<br> Semente 2: ".$semente2."<br> Area Semente 2: ".$area2."<br> Quantidade Semente 2: ".$quant2."<br> Produtor Rural? ".$rural;
+    } else {
+        $mail->Body    =  "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CNPJ: ".$cnpj."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Semente 1: ".$semente1."<br> Area Semente 1: ".$area1."<br> Quantidade Semente 1: ".$quant1."<br> Semente 2: ".$semente2."<br> Area Semente 2: ".$area2."<br> Quantidade Semente 2: ".$quant2."<br> Produtor Rural? ".$rural;
+    }
 
     $mail->send();
 

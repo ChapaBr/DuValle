@@ -89,6 +89,14 @@ a.btnGreenHome:active {
 .cor87 {
    color: rgba(0, 0, 0, .87);;
 }
+.buttonPadrao:hover {
+   background-color: #36CB4E;
+   border-color: #36CB4E;
+}
+.buttonPadrao:active {
+   background-color: #2C6A36;
+   border-color: #2C6A36;
+}
 @media(min-width: 1280px){
    .imageHomeMobile {
       background-image: none;

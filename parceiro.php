@@ -8,8 +8,11 @@ use PHPMailer\PHPMailer\Exception;
 // Load Composer's autoloader
 require 'vendor/autoload.php';
 
+$tipo = $_POST['tipo'];
 $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
+$cpf = $_POST['cpf'];
+$cnpj = $_POST['cnpj'];
 $email = $_POST['email'];
 $cep = $_POST['cep'];
 $cidade = $_POST['cidade'];
@@ -40,7 +43,11 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Contato - Home';
-    $mail->Body    = "Nome: ".$nome."<br> Telefone: ".$telefone."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
+    if(isset($cpf)){
+        $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CPF: ".$cpf."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
+    } else {
+        $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CNPJ: ".$cnpj."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
+    }
 
     $mail->send();
 
