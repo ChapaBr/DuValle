@@ -10,6 +10,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="DuValle">
 	<meta property="og:site_name" content="DuValle">
+	<link rel="icon" href="assets/imgs/logos/logo-green.svg">
 	<!-- Bootstrap -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- CSS Main -->
@@ -85,8 +86,8 @@
 			<div class="col-12 col-md-12 col-xl-12 infomationDesktop">
 				<div class="row">
 					<div class="col-6 col-md-6 col-xl-6 textHomeDesk">
-						<h3 style="color: #000;">Visão</h3>
-					    <p style="color: #000">
+						<h3 class="cor87">Visão</h3>
+					    <p class="cor87">
 					    	Ser referência brasileira como uma empresa de excelência em sementes para pastagem e adubação verde, que promove desenvolvimento para a sociedade rural e que as pessoas tenham orgulho de trabalhar. 
 						</p>
 					</div>
@@ -101,22 +102,22 @@
 					    <img src="assets/imgs/overlay/seeds-pattern-1.svg" class="seedsMissao">
 					</div>
 					<div class="col-6 col-md-6 col-xl-6 textHomeDesk">
-						<h3 style="color: #000;">Missão</h3>
-					    <p style="color: #000">
+						<h3 class="cor87">Missão</h3>
+					    <p class="cor87">
 					    	Atender às necessidades do mercado de sementes, com novas tecnologias, genéticas, eficiência e integraçã, objetivando melhorar a rentabilidade dos nossos clientes. 
 					    </p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-6 col-md-6 col-xl-6 textHomeDesk">
-						<h3 style="color: #000;">Valores</h3>
-					    <p style="color: #000">
-					    	<ul style="list-style: none;margin:0;padding:0;">
-				    		<p style="color: #000">Reconhecimento de nossos colaboradores.</p>
-				    		<p style="color: #000">Ética nas relações comerciais.</p>
-				    		<p style="color: #000">Foco no relacionamento e comprometimento.</p>
-				    		<p style="color: #000">Aperfeiçõamento profissional.</p>
-				    		<p style="color: #000">Agilidade, flexibilidade e criatividade.</p>
+						<h3 class="cor87">Valores</h3>
+					    <p class="cor87">
+					    	<ul class="listIndex">
+				    		<p class="cor87">Reconhecimento de nossos colaboradores.</p>
+				    		<p class="cor87">Ética nas relações comerciais.</p>
+				    		<p class="cor87">Foco no relacionamento e comprometimento.</p>
+				    		<p class="cor87">Aperfeiçõamento profissional.</p>
+				    		<p class="cor87">Agilidade, flexibilidade e criatividade.</p>
 				    	</ul>
 					    </p>
 					</div>
@@ -151,7 +152,7 @@
 				  </div>
 				  <div id="valores" class="tab-pane fade">
 				    <p>
-				    	<ul style="list-style: none;margin:0;padding:0;">
+				    	<ul class="listIndex">
 				    		<p>Reconhecimento de nossos colaboradores.</p>
 				    		<p>Ética nas relações comerciais.</p>
 				    		<p>Foco no relacionamento e comprometimento.</p>
@@ -195,7 +196,7 @@
 			</div>
 			<div class="col-6 col-md-6 col-xl-6">
 				<h2 class="titleContent">Contato</h2>
-				<form action="enviar.php" method="POST">
+				<form action="contato.php" method="POST">
 				  	<div class="form-row">
 					    <div class="form-group col-12">
 						  <label class="txtLabelForm" for="inputName">Nome</label>
@@ -218,6 +219,15 @@
 					    <div class="form-group col-12">
 					      	<label class="txtLabelForm" for="inputlEmail">E-mail</label>
 					      	<input type="email" class="form-control inputDefault" id="inputEmail" name="email" placeholder="email@email.com">
+					      	<div class="invalid-feedback">
+					        	Campo obrigatório
+					      	</div>
+					    </div>
+					</div>
+					<div class="form-row">
+					    <div class="form-group col-12">
+					      	<label class="txtLabelForm" for="inputlCidade">Cidade</label>
+					      	<input type="text" class="form-control inputDefault" id="inputCidade" name="cidade" placeholder="São Paulo">
 					      	<div class="invalid-feedback">
 					        	Campo obrigatório
 					      	</div>

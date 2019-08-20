@@ -86,6 +86,9 @@ a.btnGreenHome:active {
    z-index: 1030;
    bottom: 20%;
 }
+.cor87 {
+   color: rgba(0, 0, 0, .87);;
+}
 @media(min-width: 1280px){
    .imageHomeMobile {
       background-image: none;
@@ -153,7 +156,8 @@ img.imgSvgLogo {
 img.imgSvg {
    width: 21px;
 }
-ul.listaNav {
+ul.listaNav,
+.listIndex {
    list-style: none;
    padding: 0;
    border: 0;

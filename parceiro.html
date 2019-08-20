@@ -67,7 +67,7 @@
 		<div class="row">
 			<div class="col-12 col-md-12 col-sm-12 col-lg-6 col-xl-6 parceiroDesktop">
 				<h2 class="titleContent">Seja nosso parceiro</h2>
-				<form>
+				<form action="parceiro.php" method="POST">
 					<label class="txtLabelForm">Tipo</label>
 				  <div class="form-row">
 				    <div class="form-group col-12">
@@ -78,14 +78,14 @@
 				  <div class="form-row">
 				    <div class="form-group col-12">
 					  <label class="txtLabelForm" for="inputName">Nome</label>
-					  <input type="text" class="form-control inputDefault" id="inputName" placeholder="Maria Inc" required="inputName">
+					  <input type="text" class="form-control inputDefault" id="inputName" name="nome" placeholder="Maria Inc" required="inputName">
 					  <div class="invalid-feedback">
 				        Nome obrigatório
 				      </div>
 					</div>
 				  	<div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputTel">Telefone</label>
-				      <input type="tel" class="form-control inputDefault" id="inputTel" placeholder="(11)445-4534">
+				      <input type="tel" class="form-control inputDefault" id="inputTel" name="telefone" placeholder="(11)445-4534" required="inputTel">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
@@ -94,14 +94,14 @@
 				  <div class="form-row">
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputlEmail">E-mail</label>
-				      <input type="email" class="form-control inputDefault" id="inputEmail" placeholder="email@email.com">
+				      <input type="email" class="form-control inputDefault" id="inputEmail" name="email" placeholder="email@email.com" required="inputEmail">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputCep">CEP</label>
-				      <input type="number" class="form-control inputDefault" id="inputCep" placeholder="09865-670">
+				      <input type="number" class="form-control inputDefault" id="inputCep" name="cep" placeholder="09865-670" required="inputCep">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
@@ -110,14 +110,14 @@
 				  <div class="form-row">
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputlCidade">Cidade</label>
-				      <input type="text" class="form-control inputDefault" id="inputCidade" placeholder="São Paulo">
+				      <input type="text" class="form-control inputDefault" id="inputCidade" name="cidade" placeholder="São Paulo" required="inputCidade">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
-				      <label class="txtLabelForm" for="inputlCidade">UF</label>
-				      <select id="inputEstado" class="form-control inputDefault">
+				      <label class="txtLabelForm" for="inputEstado">UF</label>
+				      <select id="inputEstado" class="form-control inputDefault" name="estado" required="inputEstado">
 				        <option selected>Estado</option>
 				        <option value="AC">AC</option>
 						<option value="AL">AL</option>
@@ -154,15 +154,15 @@
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-12">
-				      <label class="txtLabelForm" for="inputlEndereco">Endereço</label>
-				      <input type="text" class="form-control inputDefault" id="inputEndero" placeholder="Rua Joaquim Chuas">
+				      <label class="txtLabelForm" for="inputEndereco">Endereço</label>
+				      <input type="text" class="form-control inputDefault" id="inputEndereco" name="endereco" placeholder="Rua Joaquim Chuas" required="inputEndereco">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
 				    </div>
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputNumero">Numero</label>
-				      <input type="text" class="form-control inputDefault" id="inputNumero" placeholder="5040">
+				      <input type="text" class="form-control inputDefault" id="inputNumero" name="numero" placeholder="5040" required="inputNumero">
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
@@ -170,8 +170,8 @@
 				  </div>
 				  <div class="form-row">
 				  	<div class="form-group col-12">
-						<label class="txtLabelForm" for="exampleFormControlTextarea1">Mensagem</label>
-					    <textarea class="form-control inputDefault" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem.."></textarea>
+						<label class="txtLabelForm" for="inputMensagem">Mensagem</label>
+					    <textarea class="form-control inputDefault" id="inputMensagem" name="mensagem" rows="3" placeholder="Mensagem.."></textarea>
 					</div>
 					<div class="form-group col-12 text-center">
 						<button type="submit" class="btnSendForm">Enviar</button>
@@ -231,54 +231,54 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 col-md-12 col-xl-12">
 				<p class="textFooter">
 					Rua Lolita Sanches Pretel, 1001 | 19360-000<br/>
 					Santo Anastácio - São Paulo, Brasil
 				</p>
-				<p class="textFooterLine">Copyright &copy; 2019 DuValle</p>
-				<p style="color:rgba(0, 0, 0, .56); font-size: 14px; margin: 10px 0;">
+				<p class="footerCopy">Copyright &copy; 2019 DuValle</p>
+				<p class="textFooter">
 					Desenvolvido por <a href="https://www.behance.net/VictorMaloyama" class="developers" title="Victor Maloyama">Victor Maloyama</a><br/>
 					e <a href="https://chapabr.github.io/portfolio/" class="developers" title="Guilherme Augusto">Guilherme Augusto</a>
 				</p>
 			</div>
 		</div>
 	</div>
-	<div class="container footerDesktop" style="margin: 76px auto 67px auto;">
+	<div class="container footerDesktop footerCaixaLogos">
 		<div class="row">
 			<div class="col-6 col-lg-6 col-xl-6">
 				<img src="assets/imgs/logos/logo-w-text.svg" style="width: 184px;">
-				<p style="color: rgba(0, 0, 0, .87);">
+				<p class="textFooter">
 					Rua Lolita Sanches Pretel, 1001 | 19360-000<br/>
 					Santo Anastácio - São Paulo, Brasil
 				</p>
-				<ul style="list-style: none;display: flex; padding: 0; margin: 0;">
-					<li style="padding: 15px 24px 35px 0px;">
-						<a href="mailto:duvalle@duvalle.agr.br"><img src="assets/imgs/icons/green/email-icon.svg" style="width: 21px;"></a>
+				<ul class="listFooter">
+					<li class="footerItemPadding">
+						<a href="mailto:duvalle@duvalle.agr.br"><img src="assets/imgs/icons/green/email-icon.svg" class="footerImage"></a>
 					</li>
-					<li style="padding: 15px 24px 35px 0px;">
-						<a href="tel:+551832634272"><img src="assets/imgs/icons/green/phone-icon.svg" style="width: 21px;"></a>
+					<li class="footerItemPadding">
+						<a href="tel:+551832634272"><img src="assets/imgs/icons/green/phone-icon.svg" class="footerImage"></a>
 					</li>
-					<li style="padding: 15px 24px 35px 0px;">
-						<a href="https://wa.me/+5518996613390"><img src="assets/imgs/icons/green/whatsapp-icon-green.svg" style="width: 21px;"></a>
+					<li class="footerItemPadding">
+						<a href="https://wa.me/+5518996613390"><img src="assets/imgs/icons/green/whatsapp-icon-green.svg" class="footerImage"></a>
 					</li>
 				</ul>
 			</div>
 			<div class="col-6 col-lg-6 col-xl-6">
-				<ul style="list-style: none;">
-					<li><a href="index.html" style="color: rgba(0, 0, 0, .87);">Home</a></li>
-					<li><a href="produtos.html" style="color: rgba(0, 0, 0, .57);">Produtos</a></li>
-					<li><a href="parceiro.html" style="color: rgba(0, 0, 0, .57);">Seja nosso parceiro</a></li>
-					<li><a href="contato.html" style="color: rgba(0, 0, 0, .57);">Contato</a></li>
+				<ul class="navFooter">
+					<li><a href="index.html" class="navFooter footerActive">Home</a></li>
+					<li><a href="produtos.html" class="navFooter">Produtos</a></li>
+					<li><a href="parceiro.html" class="navFooter">Seja nosso parceiro</a></li>
+					<li><a href="contato.html" class="navFooter">Contato</a></li>
 				</ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-6 col-lg-6 col-xl-6">
-				<p style="color: rgba(0, 0, 0, .87);">Copyright &copy; 2019 DuValle</p>
+				<p class="footerActive">Copyright &copy; 2019 DuValle</p>
 			</div>
 			<div class="col-6 col-lg-6 col-xl-6">
-				<p style="color: rgba(0, 0, 0, .87);">
+				<p class="footerActive">
 					Desenvolvido por <a href="https://www.behance.net/VictorMaloyama" class="developers" title="Victor Maloyama">Victor Maloyama</a> e <a href="https://chapabr.github.io/portfolio/" class="developers" title="Guilherme Augusto">Guilherme Augusto</a>
 				</p>
 			</div>

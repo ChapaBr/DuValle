@@ -12,6 +12,7 @@ $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
+$cidade = $_POST['cidade'];
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -35,7 +36,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Contato - Home';
-    $mail->Body    = "Nome: ".$nome."<br> Telefone: ".$telefone."<br> E-mail: ".$email."<br> Mensagem: ".$mensagem;
+    $mail->Body    = "Nome: ".$nome."<br> Telefone: ".$telefone."<br> E-mail: ".$email."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
 
     $mail->send();
 
