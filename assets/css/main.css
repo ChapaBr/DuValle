@@ -56,19 +56,27 @@ a:hover {
    text-decoration: none;
 }
 a.btnGreenHome {
-   padding: 13px 64.5px;
+   padding: 16px 36px;
    background-color: #319B42;
    color: #FFF;
    font-size: 17px;
    border-radius: 12px;
    margin-top: 20px;
    position: absolute;
-   font-weight: 700;
+   font-weight: 500;
 }
 .zeraPM {
    padding: 0;
    margin: 0;
 }
+
+.seed-bg1{
+   position:absolute;
+   z-index:0;
+   width: 98%;
+   margin:-10px;
+}
+
 a.btnGreenHome:hover {
    background-color: #36CB4E;
 }
@@ -97,6 +105,29 @@ a.btnGreenHome:active {
    background-color: #2C6A36;
    border-color: #2C6A36;
 }
+
+.values-title, .form-title, h3.titleFooter{
+   margin: 0 0 8px 0;
+   font-weight: 700;
+   color: #319B42;
+}
+
+.contentHome p, .values-p{
+   font-weight: 400;
+   color: rgba(0, 0, 0, .76);
+   font-size: 1.12em;
+}
+
+.navFooter p{
+   font-weight: 700;
+   color: rgba(0, 0, 0);
+   font-size: 1.24em;
+   margin-bottom: 4px;
+}
+
+.p{
+   font-size: 1.54em;
+}
 @media(min-width: 1280px){
    .imageHomeMobile {
       background-image: none;
@@ -109,17 +140,13 @@ a.btnGreenHome:active {
       font-size: 56px;
       color: rgba(0, 0, 0, .87);
    }
-   .contentHome p {
-      font-size: 17px;
-      font-weight: 500;
-      color: rgba(0, 0, 0, .56);
-   }
+
    .imgDesktop {
       background-image: url('../imgs/background/background-home.jpg');
       background-size: cover;
       background-repeat: no-repeat;
       height: 100vh;
-      border-radius: 0 0 270px 0;
+      border-radius: 0 0 324px 0;
    }
 }
 /* Alternate BootStrap Style */
@@ -273,16 +300,13 @@ section#home {
    height: 100vh;
 }
 h2.titleHome {
-   font-size: 32px;
+   font-size: 3.64em;
+   margin: 0 0 4px 0;
    font-weight: 700;
 }
 div.contentHome {
    position: relative;
    top: 25vh;
-}
-.contentHome p {
-   font-size: 17px;
-   font-weight: 400;
 }
 
 /* Informations */
@@ -326,7 +350,7 @@ section#information {
    height: 245px;
    position: relative;
    top: 16px;
-   margin-bottom: 64px;
+   margin-bottom: 56px;
    border-radius: 10px;
 }
 #valores .imgHome {
@@ -404,11 +428,7 @@ section#information {
 section#products {
    padding-top: 69px;
 }
-h2.titleContent {
-   font-size: 28px;
-   font-weight: 700;
-   color: rgba(0, 0, 0, .87);
-}
+
 h3.titleContent {
    color: rgba(0, 0, 0, .87);
    font-size: 20px;
@@ -450,10 +470,6 @@ button.btnGreen {
    border: none;
    text-decoration: none;
 }
-@media(max-width: 768px){
-
-}
-@media(min-width: 1024px){
    section#products {
       padding-top: 100px;
    }
@@ -659,11 +675,14 @@ section#partner {
 }
 .btnSendForm {
    background-color: #319B42;
-   height: 48px;
-   width: 211px;
-   border-radius: 10px;
-   border: 1px solid #319B42;
+   width: 216px;
+   border: 0px solid #319B42;
    color: #FFF;
+   padding: 16px 36px;
+   font-size: 17px;
+   border-radius: 12px;
+   font-weight: 700;
+   margin-top: 0.4em;
 }
 @media(max-width: 768px){
    .parceiroDesktop iframe {
@@ -686,10 +705,6 @@ section#partner {
 }
 
 /* Footer */
-h3.titleFooter {
-   font-size: 22px;
-   color: #319B42;
-}
 ul.footerList {
    list-style: none;
    padding: 0;
@@ -718,7 +733,14 @@ p.textFooter {
    color:rgba(0, 0, 0, .56);
    font-size: 14px;
    margin: 10px 0;
+   font-weight: 400;
 }
+
+p.textFooter b {
+   color:rgba(0, 0, 0);
+   font-weight: 500;
+}
+
 p.textFooterLine {
    color:rgba(0, 0, 0, .56);
    font-size: 14px;
