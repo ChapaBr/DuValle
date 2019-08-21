@@ -35,7 +35,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Contato - Home';
+    $mail->Subject = 'Contato';
     $mail->Body    = "Nome: ".$nome."<br> Telefone: ".$telefone."<br> E-mail: ".$email."<br> Cidade: ".$cidade."<br> Mensagem: ".$mensagem;
 
     $mail->send();

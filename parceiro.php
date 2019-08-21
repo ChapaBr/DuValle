@@ -42,7 +42,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Contato - Home';
+    $mail->Subject = 'Parceiro';
     if(isset($cpf)){
         $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CPF: ".$cpf."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
     } else {

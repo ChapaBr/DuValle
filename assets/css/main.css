@@ -101,7 +101,12 @@ a.btnGreenHome:active {
    bottom: 20%;
 }
 .cor87 {
-   color: rgba(0, 0, 0, .87);;
+   color: rgba(0, 0, 0, .87);
+}
+.titleBlack {
+   font-size: 32px;
+   font-weight: 700;
+   color: rgba(0, 0, 0, .87);
 }
 .buttonPadrao:hover {
    background-color: #36CB4E;
