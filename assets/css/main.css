@@ -247,10 +247,6 @@ li.itemNav {
    img.logoDesktop {
       display: none;
    }
-   .productsItem {
-      width: 33%;
-      display: inline-block;
-   }
 }
 @media(min-width: 1024px){
    a.nav-link {
@@ -287,6 +283,10 @@ li.itemNav {
    }
    p.navbarCopy {
       display: none;
+   }
+   .productsItem {
+      width: 33%;
+      display: inline-block;
    }
 }
 
@@ -494,10 +494,6 @@ button.btnGreen {
 }
    section#products {
       padding-top: 100px;
-   }
-   .productsItem {
-      width: 33%;
-      display: inline-block;
    }
    .filtroDesktop {
       list-style: none;
