@@ -232,5 +232,10 @@ $(document).ready(function(){
 			$('.buttonArea').css('margin-bottom', '0px');
 			$('.buttonArea').css('margin-top', '0px');
 		}
+		if($(this).scrollTop() > 500){
+			$('.seta-top').css('display', 'block');
+		} else {
+			$('.seta-top').css('display', 'none');
+		}
 	});
 });

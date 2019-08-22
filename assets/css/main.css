@@ -922,3 +922,16 @@ a.navbar-toggler {
    background-color: #319B42;
 }
 
+/* Botão voltar ao topo */
+.seta-top {
+   position: fixed;
+   bottom: 24px;
+   right: 24px;
+   border: 2px solid #319B42;
+   border-radius: 50%;
+   opacity: none;
+}
+.seta-top img {
+   width: 34px;
+   transform: rotate(90deg);
+}
