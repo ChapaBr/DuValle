@@ -238,4 +238,10 @@ $(document).ready(function(){
 			$('.seta-top').css('display', 'none');
 		}
 	});
+	setTimeout(function() {
+        $('#loadingWrap').fadeOut('400');
+        $("html, body").animate({
+            scrollTop: 0
+        }, 120);
+    }, 1600);
 });

@@ -928,10 +928,21 @@ a.navbar-toggler {
    bottom: 24px;
    right: 24px;
    border: 2px solid #319B42;
-   border-radius: 50%;
+   border-radius: 10px;
    display: none;
 }
 .seta-top img {
    width: 34px;
    transform: rotate(90deg);
+}
+
+/* Loading */
+#loadingWrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background-color: #fcfcfc;
 }
