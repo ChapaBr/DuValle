@@ -929,7 +929,7 @@ a.navbar-toggler {
    right: 24px;
    border: 2px solid #319B42;
    border-radius: 50%;
-   opacity: none;
+   display: none;
 }
 .seta-top img {
    width: 34px;
