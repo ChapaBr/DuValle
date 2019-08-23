@@ -55,28 +55,22 @@ $(document).ready(function(){
 		if(typeItem === 'todos'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('.productsItem').css("display", "inline-block");
+			$('.productsItem').fadeIn();
 		} else if(typeItem === 'verao'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('ul .productsItem').css("display", "none");
-			$('ul .verao').css("display", "inline-block");
-			$('ul .leguminosas').css("display", "none");
-			$('.productsList .inverno').css("display", "none");
+			$('ul .productsItem').fadeOut();
+			$('ul .verao').fadeIn();
 		} else if(typeItem === 'leguminosas'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('ul .verao').css("display", "none");
-			$('ul .productsItem').css("display", "none");
-			$('ul .leguminosas').css("display", "inline-block");
-			$('ul .inverno').css("display", "none");
+			$('ul .productsItem').fadeOut();
+			$('ul .leguminosas').fadeIn();
 		} else if(typeItem === 'inverno'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('ul .verao').css("display", "none");
-			$('ul .productsItem').css("display", "none");
-			$('ul .leguminosas').css("display", "none");
-			$('ul .inverno').css("display", "inline-block");
+			$('ul .productsItem').fadeOut();
+			$('ul .inverno').fadeIn();
 		}
 	});
 
@@ -103,15 +97,15 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "block");
 			$('.nav-item a.nav-link').css('color', '#FFF');
 			$(this).find('.barraMid').css("background-color", "#FFF");
-			$(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			$(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
-			$(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			// $(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
+			// $(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(0deg)");
 			$(this).find('.barraTop').css("background-color", "#FFF");
 			$(this).find('.barraTop').css("top", "6px");
-			$(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			$(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
-			$(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			// $(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
+			// $(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(0deg)");
 			$(this).find('.barraBot').css("background-color", "#FFF");
 			$(this).find('.barraBot').css("bottom", "0px");
@@ -122,15 +116,15 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "none");
 			$('.nav-item a.nav-link').css('color', 'rgba(0, 0, 0, .87)');
 			$(this).find('.barraMid').css("background-color", "transparent");
-			$(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
-			$(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
-			$(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
+			// $(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
+			// $(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
 			$(this).find('.barraTop').css("top", "12px");
 			$(this).find('.barraTop').css("background-color", "#319B42");
-			$(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
-			$(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
-			$(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
+			// $(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
+			// $(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("background-color", "#319B42");
 			$(this).find('.barraBot').css("bottom", "8px");
@@ -143,14 +137,14 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "block");
 			$('.nav-item a.nav-link').css('color', '#FFF');
 			$(this).find('.barraMid').css("background-color", "#319B42");
-			$(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			$(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
-			$(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			// $(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
+			// $(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(0deg)");
 			$(this).find('.barraTop').css("top", "6px");
-			$(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			$(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
-			$(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			// $(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
+			// $(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(0deg)");
 			$(this).find('.barraBot').css("bottom", "0px");
 		} else {
@@ -159,14 +153,14 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "none");
 			$('.nav-item a.nav-link').css('color', 'rgba(0, 0, 0, .87)');
 			$(this).find('.barraMid').css("background-color", "transparent");
-			$(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
-			$(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
-			$(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
+			// $(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
+			// $(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
 			$(this).find('.barraTop').css("top", "10px");
-			$(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
-			$(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
-			$(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
+			// $(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
+			// $(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
+			// $(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("bottom", "10px");
 		}
@@ -232,12 +226,16 @@ $(document).ready(function(){
 			$('.buttonArea').css('margin-bottom', '0px');
 			$('.buttonArea').css('margin-top', '0px');
 		}
-		if($(this).scrollTop() > 500){
-			$('.seta-top').css('display', 'block');
-		} else {
-			$('.seta-top').css('display', 'none');
-		}
+        if ($(this).scrollTop() > 300) {
+            $('.seta-top').fadeIn();
+        } else {
+            $('.seta-top').fadeOut();
+        }
 	});
+	$('.seta-top').click(function(){
+        $('html, body').animate({scrollTop : 0},900);
+        return false;
+    });
 	setTimeout(function() {
         $('#loadingWrap').fadeOut('400');
         $("html, body").animate({
