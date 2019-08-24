@@ -601,7 +601,7 @@ section#partner {
 }
 .txtLabelForm {
    color: #319B42;
-   font-size: 14px;
+   font-size: 1.16em;
    font-weight: 500;
 }
 /*.btnFisica {
@@ -944,5 +944,13 @@ a.navbar-toggler {
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    background-color: #fcfcfc;
+    background-color: #fff;
+}
+
+#loadingWrap img{
+   width: 256px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
