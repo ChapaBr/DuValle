@@ -25,28 +25,31 @@ $(document).ready(function(){
 		if(typeItem === 'todos'){
 			$('.owl-carousel a').removeClass('active');
 			$(this).addClass('active');
+			$('.productsItem').css('display', 'none');
+			$('.productsItem').animate({opacity: 0}, 400);
 			$('.productsItem').css("display", "block");
+			$('.productsItem').animate({opacity: 1}, 400);
 		} else if(typeItem === 'verao'){
 			$('.owl-carousel a').removeClass('active');
 			$(this).addClass('active');
-			$('ul .productsItem').css("display", "none");
-			$('ul .verao').css("display", "block");
-			$('ul .leguminosas').css("display", "none");
-			$('.productsList .inverno').css("display", "none");
+			$('.productsItem').css('display', 'none');
+			$('.productsItem').animate({opacity: 0}, 400);
+			$('.verao').css('display', 'inline-block');
+			$('.verao').animate({opacity: 1}, 400);
 		} else if(typeItem === 'leguminosas'){
 			$('.owl-carousel a').removeClass('active');
 			$(this).addClass('active');
-			$('ul .verao').css("display", "none");
-			$('ul .productsItem').css("display", "none");
-			$('ul .leguminosas').css("display", "block");
-			$('ul .inverno').css("display", "none");
+			$('.productsItem').css('display', 'none');
+			$('.productsItem').animate({opacity: 0}, 350);
+			$('.leguminosas').css('display', 'inline-block');
+			$('.leguminosas').animate({opacity: 1}, 350);
 		} else if(typeItem === 'inverno'){
 			$('.owl-carousel a').removeClass('active');
 			$(this).addClass('active');
-			$('ul .verao').css("display", "none");
-			$('ul .productsItem').css("display", "none");
-			$('ul .leguminosas').css("display", "none");
-			$('ul .inverno').css("display", "block");
+			$('.productsItem').css('display', 'none');
+			$('.productsItem').animate({opacity: 0}, 350);
+			$('.inverno').css('display', 'inline-block');
+			$('.inverno').animate({opacity: 1}, 350);
 		}
 	});
 
@@ -57,8 +60,8 @@ $(document).ready(function(){
 			$(this).addClass('filtroActive');
 			$('ul .productsItem').css('display', 'none');
 			$('ul .productsItem').animate({opacity: 0}, 400);
-			$('.productsItem').css('display', 'inline-block');
-			$('.productsItem').animate({opacity: 1}, 400);
+			$('ul .productsItem').css('display', 'inline-block');
+			$('ul .productsItem').animate({opacity: 1}, 400);
 		} else if(typeItem === 'verao'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
