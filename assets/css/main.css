@@ -623,39 +623,32 @@ section#partner {
    font-size: 1.16em;
    font-weight: 500;
 }
-/*.btnFisica {
-   width: 50%;
-   float: left;
-   border-radius: 10px 0 0 10px;
-   color: #fff;
-   background-color: #319B42;
-   border: 1px solid #319B42;
-   border-right: 0;
-   height: 44px;
-}*/
 .btnFisicaLabel {
-   width: 49%;
-   float: left;
    cursor: pointer;
    text-align: center;
-   padding: 12px 43px;
+   padding: 10px;
    border-radius: 10px 0 0 10px;
    border: 2px solid #319B42;
    color: #000;
    background-color: #FFF;
-   width: auto;
 }
 .btnJuridicaLabel {
-   width: 51%;
    cursor: pointer;
    text-align: center;
    float: right;
-   padding: 12px 42.3px;
+   padding: 10px;
    border-radius: 0 10px 10px 0;
    border: 2px solid #319B42;
    color: #000;
    background-color: #FFF;
-   width: auto;
+}
+.btnJuridicaLabel label,
+.btnFisicaLabel label {
+   cursor: pointer;
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   margin: 0;
 }
 .btnFisica {
    text-align: center;
