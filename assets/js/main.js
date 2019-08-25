@@ -8,6 +8,7 @@ $(document).ready(function(){
 			$('.productsItem').animate({opacity: 0}, 400);
 			$('.productsItem').css("display", "block");
 			$('.productsItem').animate({opacity: 1}, 400);
+			$('.btnFiltro').css("background-color", "rgba(0, 0, 0, .36)");
 		} else if(typeItem === 'verao'){
 			$('.filtroMobileItem').removeClass('filtroMobActive');
 			$(this).addClass('filtroMobActive');
@@ -15,6 +16,7 @@ $(document).ready(function(){
 			$('.productsItem').animate({opacity: 0}, 400);
 			$('.verao').css('display', 'inline-block');
 			$('.verao').animate({opacity: 1}, 400);
+			$('.btnFiltro').css("background-color", "#139B42");
 		} else if(typeItem === 'leguminosas'){
 			$('.filtroMobileItem').removeClass('filtroMobActive');
 			$(this).addClass('filtroMobActive');
@@ -22,6 +24,7 @@ $(document).ready(function(){
 			$('.productsItem').animate({opacity: 0}, 350);
 			$('.leguminosas').css('display', 'inline-block');
 			$('.leguminosas').animate({opacity: 1}, 350);
+			$('.btnFiltro').css("background-color", "#139B42");
 		} else if(typeItem === 'inverno'){
 			$('.filtroMobileItem').removeClass('filtroMobActive');
 			$(this).addClass('filtroMobActive');
@@ -29,6 +32,7 @@ $(document).ready(function(){
 			$('.productsItem').animate({opacity: 0}, 350);
 			$('.inverno').css('display', 'inline-block');
 			$('.inverno').animate({opacity: 1}, 350);
+			$('.btnFiltro').css("background-color", "#139B42");
 		}
 	});
 
