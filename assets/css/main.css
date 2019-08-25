@@ -171,6 +171,21 @@ a.btnGreenHome:active {
 }
 
 /* Navbar General */
+nav.navbar .contatoNavEmail {
+   position: absolute;
+   right: 144px;
+   bottom: 16px;
+}
+nav.navbar .contatoNavPhone {
+   position: absolute;
+   right: 96px;
+   bottom: 16px;
+}
+nav.navbar .contatoNavWhats {
+   position: absolute;
+   right: 48px;
+   bottom: 16px;
+}
 li.nav-item img {
    margin: 17.5px 16px 22.5px 16px;
 }
@@ -225,6 +240,11 @@ li.itemNav {
       padding-top: 10px;
       margin: 0 20px;
       width: 20px;
+   }
+   nav.navbar .contatoNavEmail,
+   nav.navbar .contatoNavPhone,
+   nav.navbar .contatoNavWhats {
+      display: none;
    }
 }
 /* DropDown Navbar White Items*/
@@ -497,21 +517,20 @@ button.btnGreen {
    border: none;
    text-decoration: none;
 }
-   section#products {
-      padding-top: 100px;
-   }
-   .filtroDesktop {
-      list-style: none;
-      display: flex;
-      padding: 0;
-      margin: 16px 0 32px 0;
-   }
-   .filtroActive {
-      background-color: #319B42;
-      padding: 10px 25px;
-      border-radius: 10px;
-      color: #FFF !important;
-   }
+section#products {
+   padding-top: 100px;
+}
+.filtroDesktop {
+   list-style: none;
+   display: flex;
+   padding: 0;
+   margin: 16px 0 32px 0;
+}
+.filtroActive {
+   background-color: #319B42;
+   padding: 10px 25px;
+   border-radius: 10px;
+   color: #FFF !important;
 }
 /* Product */
 section#product {
@@ -711,6 +730,9 @@ section#partner {
 @media(max-width: 768px){
    .parceiroDesktop iframe {
       min-height: auto;
+   }
+   section#product {
+      padding-top: 75px;
    }
 }
 @media(min-width: 1024px){
@@ -925,7 +947,7 @@ a.navbar-toggler {
 /* Botão voltar ao topo */
 .seta-top {
    position: fixed;
-   bottom: 24px;
+   bottom: 30px;
    right: 24px;
    border: 2px solid #319B42;
    border-radius: 10px;

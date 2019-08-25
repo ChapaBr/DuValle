@@ -55,22 +55,31 @@ $(document).ready(function(){
 		if(typeItem === 'todos'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('.productsItem').fadeIn();
+			$('ul .productsItem').css('display', 'none');
+			$('ul .productsItem').animate({opacity: 0}, 400);
+			$('.productsItem').css('display', 'inline-block');
+			$('.productsItem').animate({opacity: 1}, 400);
 		} else if(typeItem === 'verao'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('ul .productsItem').fadeOut();
-			$('ul .verao').fadeIn();
+			$('ul .productsItem').css('display', 'none');
+			$('ul .productsItem').animate({opacity: 0}, 400);
+			$('ul .verao').css('display', 'inline-block');
+			$('ul .verao').animate({opacity: 1}, 400);
 		} else if(typeItem === 'leguminosas'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('ul .productsItem').fadeOut();
-			$('ul .leguminosas').fadeIn();
+			$('ul .productsItem').css('display', 'none');
+			$('ul .productsItem').animate({opacity: 0}, 350);
+			$('ul .leguminosas').css('display', 'inline-block');
+			$('ul .leguminosas').animate({opacity: 1}, 350);
 		} else if(typeItem === 'inverno'){
 			$('.filtroDesktop a').removeClass('filtroActive');
 			$(this).addClass('filtroActive');
-			$('ul .productsItem').fadeOut();
-			$('ul .inverno').fadeIn();
+			$('ul .productsItem').css('display', 'none');
+			$('ul .productsItem').animate({opacity: 0}, 350);
+			$('ul .inverno').css('display', 'inline-block');
+			$('ul .inverno').animate({opacity: 1}, 350);
 		}
 	});
 
