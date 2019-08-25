@@ -638,22 +638,24 @@ section#partner {
    float: left;
    cursor: pointer;
    text-align: center;
-   padding: 12px 80px;
+   padding: 12px 43px;
    border-radius: 10px 0 0 10px;
    border: 2px solid #319B42;
    color: #000;
    background-color: #FFF;
+   width: auto;
 }
 .btnJuridicaLabel {
    width: 51%;
    cursor: pointer;
    text-align: center;
    float: right;
-   padding: 12px 80px;
+   padding: 12px 42.3px;
    border-radius: 0 10px 10px 0;
    border: 2px solid #319B42;
    color: #000;
    background-color: #FFF;
+   width: auto;
 }
 .btnFisica {
    text-align: center;
