@@ -93,16 +93,18 @@
 				<form action="cotar.php" method="POST">
 					<label class="txtLabelForm">Tipo</label>
 				  <div class="form-row">
-				    <div class="form-group col-12">
-				    	<label class="btnFisicaLabel tipoClick buttonVerde" id="sla1">
+				    <div class="form-group col-6 btnFisicaLabel tipoClick buttonVerde">
+				    	<label>
 				    		Pessoa Física
 				    		<input type="radio" name="tipo" value="Física" class="btnFisica active" id="pessoaFisica" required="tipo" checked>
 				    	</label>
-				      	<label class="btnJuridicaLabel tipoClick" id="sla2">
+				   	</div>
+				   	<div class="form-group col-6 btnJuridicaLabel tipoClick">
+				      	<label>
 				      		Pessoa Jurídica
 				      		<input type="radio" name="tipo" value="Jurídica" class="btnJuridica" id="pessoaJuridica" required="tipo">
 						</label>
-				    </div>
+					</div>
 				  </div>
 				  <div class="form-row">
 				    <div class="form-group col-12">
