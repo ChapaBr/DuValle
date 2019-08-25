@@ -1,51 +1,30 @@
 $(document).ready(function(){
-	$('.owl-carousel').owlCarousel({
-    items: 0,
-    autoplay: false ,
-    center: false,
-    responsive: true,
-    responsive:{
-        0:{
-            items:1
-        },
-        360:{
-        	items: 2
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-	});
-
-	$('.owl-carousel a').click(function(){
+	$('.filtroMobileItem').click(function(){
 		var typeItem = $(this).attr('rel');
 		if(typeItem === 'todos'){
-			$('.owl-carousel a').removeClass('active');
-			$(this).addClass('active');
+			$('.filtroMobileItem').removeClass('filtroMobActive');
+			$(this).addClass('filtroMobActive');
 			$('.productsItem').css('display', 'none');
 			$('.productsItem').animate({opacity: 0}, 400);
 			$('.productsItem').css("display", "block");
 			$('.productsItem').animate({opacity: 1}, 400);
 		} else if(typeItem === 'verao'){
-			$('.owl-carousel a').removeClass('active');
-			$(this).addClass('active');
+			$('.filtroMobileItem').removeClass('filtroMobActive');
+			$(this).addClass('filtroMobActive');
 			$('.productsItem').css('display', 'none');
 			$('.productsItem').animate({opacity: 0}, 400);
 			$('.verao').css('display', 'inline-block');
 			$('.verao').animate({opacity: 1}, 400);
 		} else if(typeItem === 'leguminosas'){
-			$('.owl-carousel a').removeClass('active');
-			$(this).addClass('active');
+			$('.filtroMobileItem').removeClass('filtroMobActive');
+			$(this).addClass('filtroMobActive');
 			$('.productsItem').css('display', 'none');
 			$('.productsItem').animate({opacity: 0}, 350);
 			$('.leguminosas').css('display', 'inline-block');
 			$('.leguminosas').animate({opacity: 1}, 350);
 		} else if(typeItem === 'inverno'){
-			$('.owl-carousel a').removeClass('active');
-			$(this).addClass('active');
+			$('.filtroMobileItem').removeClass('filtroMobActive');
+			$(this).addClass('filtroMobActive');
 			$('.productsItem').css('display', 'none');
 			$('.productsItem').animate({opacity: 0}, 350);
 			$('.inverno').css('display', 'inline-block');

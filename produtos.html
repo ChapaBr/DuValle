@@ -20,9 +20,6 @@
 	<meta name="author" content="Guilherme Augusto & Victor Maloyama">
 	<meta property="og:description" content="Esta procurando por sementes forrageiras? Então conheça a DuValle Sementes, temos como objetivo a produtividade de sua pastagem">
 	<link rel="icon" href="assets/imgs/logos/favicon.png">
-	<!-- OWL Carousel -->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 	<!-- Bootstrap -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- CSS Main -->
@@ -91,19 +88,44 @@
 <section id="products">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-12 col-sm-12">
+			<div class="col-6 col-md-6 col-sm-6 col-lg-12 col-xl-12">
 				<h2 class="titleContent titleBlack">Produtos</h2>
 			</div>
-		</div>
-		<div class="row footerMobile">
-			<div class="col-12 col-md-12 col-sm-12">
-				<div class="owl-carousel owl-theme">
-					<div><a class="itemCarousel active" rel="todos">Todos Produtos</a></div>
-				  	<div><a class="itemCarousel" rel="verao">Forrageiras de Verão</a></div>
-				  	<div><a class="itemCarousel" rel="leguminosas">Leguminosas</a></div>
-				  	<div><a class="itemCarousel" rel="inverno">Forrageiras de Inverno</a></div>
-				</div>
+			<div class="col-6 col-md-6 col-sm-6 footerMobile">
+				<button type="button" class="btnFiltro" data-toggle="modal" data-target="#filtros">
+					Filtro
+				</button>
 			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="filtros" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Filtros</h5>
+		        <span class="limpaFiltro"><a rel="limpar">Limpar filtros</a></span>
+		      </div>
+		      <div class="modal-body">
+		        <ul class="filtroMobile">
+		        	<li class="filtroMobileItem filtroMobActive" rel="todos">
+		        		Todos produtos
+		        	</li>
+		        	<li class="filtroMobileItem" rel="todos">
+		        		Forrageiras de verão
+		        	</li>
+		        	<li class="filtroMobileItem" rel="leguminosas">
+		        		Leguminosas
+		        	</li>
+		        	<li class="filtroMobileItem" rel="inverno">
+		        		Forrageiras de inverno
+		        	</li>
+		        </ul>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btnFiltroMobile" data-dismiss="modal">Fechar</button>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 		<div class="row footerDesktop">
 			<div class="col-12 col-lg-12 col-xl-12">
@@ -352,8 +374,6 @@
 
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!-- OWL Carousel -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- Bootstrap -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
