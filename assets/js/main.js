@@ -202,7 +202,6 @@ $(document).ready(function(){
 			$('#inputDado').addClass('cnpjMask');
 			$('#labelNome').text('Razão Social');
 			$('#inputName').attr({placeholder:"Maria Inc"});
-			$('#inputName').attr('name', 'razao');
 			$('#labelDado').text('CNPJ');
 			$('#inputDado').attr({placeholder:"00.000.000/0000-00"});
 			$('#inputDado').attr('name', 'cnpj');

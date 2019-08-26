@@ -32,6 +32,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
+    $mail->CharSet = 'UTF-8';
     $mail->SMTPDebug = 0;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';   // Specify main and backup SMTP servers
@@ -42,7 +43,7 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('website@duvalle.agr.br', 'Contato - ' . $nome); //aqui vc coloca o email do cliente 
+    $mail->setFrom('website@duvalle.agr.br', 'Cotação - ' . $nome); //aqui vc coloca o email do cliente 
     $mail->addAddress('website@duvalle.agr.br', 'Duvalle');     // Add a recipient
     // $mail->addReplyTo('devnathan45@gmail.com', 'Information');
 
@@ -58,8 +59,8 @@ try {
     $mail->send();
 
     //Aqui você pode dar uma header location
-    header('location: index.html?email=success');
+    header('location: produtos.html?email=success');
 } catch (Exception $e) {
-    header('location: index.html?email=error');
+    header('location: produtos.html?email=error');
     // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

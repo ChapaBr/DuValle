@@ -26,6 +26,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
+    $mail->CharSet = 'UTF-8';
     $mail->SMTPDebug = 0;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';   // Specify main and backup SMTP servers
@@ -36,7 +37,7 @@ try {
     $mail->Port       = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('website@duvalle.agr.br', 'Contato - ' . $nome); //aqui vc coloca o email do cliente 
+    $mail->setFrom('website@duvalle.agr.br', 'Parceiro - ' . $nome); //aqui vc coloca o email do cliente 
     $mail->addAddress('website@duvalle.agr.br', 'Duvalle');     // Add a recipient
     // $mail->addReplyTo('devnathan45@gmail.com', 'Information');
 
@@ -44,9 +45,9 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Parceiro';
     if(isset($cpf)){
-        $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CPF: ".$cpf."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
+        $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CPF: ".$cpf."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Cidade: ".$cidade."<br> Mensagem: ".$mensagem;
     } else {
-        $mail->Body    = "Pessoa: ".$tipo."<br> Nome: ".$nome."<br> Telefone: ".$telefone."<br> CNPJ: ".$cnpj."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Mensagem: ".$mensagem."<br> Cidade: ".$cidade;
+        $mail->Body    = "Pessoa: ".$tipo."<br> Razão Social: ".$nome."<br> Telefone: ".$telefone."<br> CNPJ: ".$cnpj."<br> E-mail: ".$email."<br> Estado: ".$estado."<br> Endereço: ".$endereco."<br> Numero: ".$numero."<br> Cidade: ".$cidade."<br> Mensagem: ".$mensagem;
     }
 
     $mail->send();
