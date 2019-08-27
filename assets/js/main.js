@@ -69,7 +69,6 @@ $(document).ready(function(){
 		}
 	});
 
-
 	$('.form-control').blur(function(){
 		var conteudo = $(this).val().length;
 		if(conteudo <= 0){
@@ -236,4 +235,5 @@ $(document).ready(function(){
             scrollTop: 0
         }, 120);
     }, 1600);
+
 });

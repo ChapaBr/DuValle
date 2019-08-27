@@ -92,6 +92,9 @@
 				<h2 class="titleContent titleBlack">Cotação</h2>
 				<form action="cotar.php" method="POST">
 					<label class="txtLabelForm">Tipo</label>
+					<div class="alert alert-success fade" role="alert" style="position: fixed;bottom: 0;">
+						Cotação enviada com sucesso.
+					</div>
 				  <div class="form-row">
 				    <div class="form-group col-6 btnFisicaLabel tipoClick buttonVerde">
 				    	<label>
@@ -210,7 +213,31 @@
 				  <div class="form-row">
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputSemente1">Nome da semente</label>
-				      <input type="text" class="form-control inputDefault" id="inputSemente1" name="semente1" placeholder="Nome da semente" required="inputSemente1">
+				      <select id="inputSemente1" name="semente1" class="form-control inputDefault" required>
+				        <option value="" disabled selected>Semente</option>
+				        <option value="Andropogon">Andropogon</option>
+						<option value="Aruana">Aruana</option>
+						<option value="Llanero">Llanero</option>
+						<option value="Decumbens">Decumbens</option>
+						<option value="Humidícola">Humidícola</option>
+						<option value="MG - 4">MG - 4</option>
+						<option value="Ruziziensis">Ruziziensis</option>
+						<option value="MG - 5">MG - 5</option>
+						<option value="Batatais">Batatais</option>
+						<option value="Massai">Massai</option>
+						<option value="Milheto">Milheto</option>
+						<option value="Mombaça">Mombaça</option>
+						<option value="Pensacola">Pensacola</option>
+						<option value="Pojuca">Pojuca</option>
+						<option value="Tanzânia">Tanzânia</option>
+						<option value="Aveia Preta">Aveia Preta</option>
+						<option value="Azevém">Azevém</option>
+						<option value="Crotalária Juncea">Crotalária Juncea</option>
+						<option value="Estilozantes Campo Grande">Estilozantes Campo Grande</option>
+						<option value="Feijão de Porco">Feijão de Porco</option>
+						<option value="Leucena">Leucena</option>
+						<option value="Mucuna Preta">Mucuna Preta</option>
+				      </select>
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>
@@ -231,7 +258,31 @@
 				  <div class="form-row">
 				    <div class="form-group col-12">
 				      <label class="txtLabelForm" for="inputSemente2">Nome da semente</label>
-				      <input type="text" class="form-control inputDefault" id="inputSemente2" name="semente2" placeholder="Nome da semente">
+				      <select id="inputSemente2" name="semente2" class="form-control inputDefault">
+				        <option value="" selected>Semente</option>
+				        <option value="Andropogon">Andropogon</option>
+						<option value="Aruana">Aruana</option>
+						<option value="Llanero">Llanero</option>
+						<option value="Decumbens">Decumbens</option>
+						<option value="Humidícola">Humidícola</option>
+						<option value="MG - 4">MG - 4</option>
+						<option value="Ruziziensis">Ruziziensis</option>
+						<option value="MG - 5">MG - 5</option>
+						<option value="Batatais">Batatais</option>
+						<option value="Massai">Massai</option>
+						<option value="Milheto">Milheto</option>
+						<option value="Mombaça">Mombaça</option>
+						<option value="Pensacola">Pensacola</option>
+						<option value="Pojuca">Pojuca</option>
+						<option value="Tanzânia">Tanzânia</option>
+						<option value="Aveia Preta">Aveia Preta</option>
+						<option value="Azevém">Azevém</option>
+						<option value="Crotalária Juncea">Crotalária Juncea</option>
+						<option value="Estilozantes Campo Grande">Estilozantes Campo Grande</option>
+						<option value="Feijão de Porco">Feijão de Porco</option>
+						<option value="Leucena">Leucena</option>
+						<option value="Mucuna Preta">Mucuna Preta</option>
+				      </select>
 				      <div class="invalid-feedback">
 				        Campo obrigatório
 				      </div>

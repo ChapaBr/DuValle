@@ -793,6 +793,9 @@ section#partner {
    margin-top: 0.4em;
    transition: 0.2s;
 }
+select:invalid {
+  color: rgba(0, 0, 0, .30);
+}
 @media(max-width: 768px){
    .parceiroDesktop iframe {
       min-height: auto;
