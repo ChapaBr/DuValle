@@ -86,6 +86,24 @@
   	</div>
 </nav>
 
+<div class="container overlayNotifica" style="display: none;">
+	<div class="row">
+		<div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xl-12">
+			<div class="toast__container">
+				<div class="toast toast--green" style="opacity: 0; display: block;">
+					<div class="toast__content">
+						<p class="toast__type">Enviado</p>
+						<p class="toast__message">Email enviado com sucesso!</p>
+					</div>
+					<div class="toast__close"> 
+						X 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Home -->
 <section id="home">
 	<div class="container-fluid">
@@ -223,7 +241,7 @@
 				  	<div class="form-row">
 					    <div class="form-group col-12">
 						  <label class="txtLabelForm" for="inputName">Nome</label>
-						  <input type="text" class="form-control inputDefault" id="inputName" name="nome" placeholder="Maria Inc">
+						  <input type="text" class="form-control inputDefault" id="inputName" name="nome" placeholder="Maria Inc" required>
 						  <div class="invalid-feedback">
 					        Campo obrigatório
 					      </div>
@@ -232,7 +250,7 @@
 					<div class="form-row">
 					  	<div class="form-group col-12">
 					      	<label class="txtLabelForm" for="inputTel">Telefone</label>
-					      	<input type="tel" class="form-control inputDefault telMask" id="inputTel" name="telefone" placeholder="(11)445-4534">
+					      	<input type="tel" class="form-control inputDefault telMask" id="inputTel" name="telefone" placeholder="(11)445-4534" required>
 					      	<div class="invalid-feedback">
 					        	Campo obrigatório
 					      	</div>
@@ -241,7 +259,7 @@
 				  	<div class="form-row">
 					    <div class="form-group col-12">
 					      	<label class="txtLabelForm" for="inputlEmail">E-mail</label>
-					      	<input type="email" class="form-control inputDefault" id="inputEmail" name="email" placeholder="email@email.com">
+					      	<input type="email" class="form-control inputDefault" id="inputEmail" name="email" placeholder="email@email.com" required>
 					      	<div class="invalid-feedback">
 					        	Campo obrigatório
 					      	</div>
@@ -250,7 +268,7 @@
 					<div class="form-row">
 					    <div class="form-group col-12">
 					      	<label class="txtLabelForm" for="inputlCidade">Cidade</label>
-					      	<input type="text" class="form-control inputDefault" id="inputCidade" name="cidade" placeholder="São Paulo">
+					      	<input type="text" class="form-control inputDefault" id="inputCidade" name="cidade" placeholder="São Paulo" required>
 					      	<div class="invalid-feedback">
 					        	Campo obrigatório
 					      	</div>
