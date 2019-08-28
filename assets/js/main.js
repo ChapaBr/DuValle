@@ -249,7 +249,7 @@ $(document).ready(function(){
         $('.toast').addClass('toast--green');
         $('.toast').css({opacity: 0, display: 'block'}).animate({opacity: 1}, 2000);
         tempoDefine();
-    } else {
+    } else if(urlLocation.indexOf("error") != -1){
         $('.toast__type').text('Falha');
         $('.toast__message').text('Falha ao enviar o email.');
         $('.toast').removeClass('toast--green');
