@@ -173,18 +173,21 @@ a.btnGreenHome:active {
 /* Navbar General */
 nav.navbar .contatoNavEmail {
    position: absolute;
-   right: 144px;
+   right: 164px;
    bottom: 16px;
+   padding: 0;
 }
 nav.navbar .contatoNavPhone {
    position: absolute;
-   right: 96px;
+   right: 116px;
    bottom: 16px;
+   padding: 0;
 }
 nav.navbar .contatoNavWhats {
    position: absolute;
-   right: 48px;
-   bottom: 16px;
+   right: 70px;
+   bottom: 17px;
+   padding: 0;
 }
 li.nav-item img {
    margin: 17.5px 16px 22.5px 16px;
@@ -967,9 +970,10 @@ p.textFooterLine {
 
 /* Testando transition checkbox */
 a.navbar-toggler {
-   width: 21px;
-   height: 21px;
+   width: 24px;
+   height: 24px;
    position: relative;
+   padding: 0;
 }
  .navbar-toggler span {
    margin: 0;
@@ -978,14 +982,13 @@ a.navbar-toggler {
 .navbar-toggler span.barraTop {
    width: 21px;
    height: 2px;
-   top: 6px;
+   top: 7px;
    position: absolute;
    transition: all .3s linear;
 }
 .navbar-toggler span.barraMid {
    width: 21px;
    height: 2px;
-   left: 12px;
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
@@ -994,7 +997,7 @@ a.navbar-toggler {
 .navbar-toggler span.barraBot {
    width: 21px;
    height: 2px;
-   bottom: 0px;
+   bottom: 3px;
    position: absolute;
    background-color: #FFF;
    transition: all .3s linear;
