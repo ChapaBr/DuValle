@@ -1,10 +1,4 @@
 $(document).ready(function(){
-	setTimeout(function() {
-        $('#loadingWrap').fadeOut('400');
-        $("html, body").animate({
-            scrollTop: 0
-        }, 120);
-    }, 1600);
 	$('.filtroMobileItem').click(function(){
 		var typeItem = $(this).attr('rel');
 		if(typeItem === 'todos'){
@@ -261,4 +255,10 @@ $(document).ready(function(){
     $('.toast__close').click(function(){
         $('.overlayNotifica').css('display', 'none');
     });
+    setTimeout(function() {
+        $('#loadingWrap').fadeOut('400');
+        $("html, body").animate({
+            scrollTop: 0
+        }, 120);
+    }, 1600);
 });
