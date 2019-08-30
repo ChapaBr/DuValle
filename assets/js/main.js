@@ -2,7 +2,7 @@ $(document).ready(function(){
 	setTimeout(function() {
         $('#loadingWrap').fadeOut('400');
         $("html, body").animate({
-            scrollTop: 0;
+            scrollTop: 0
         }, 120);
     }, 1600);
 	$('.filtroMobileItem').click(function(){
