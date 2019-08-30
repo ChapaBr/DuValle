@@ -97,15 +97,15 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "block");
 			$('.nav-item a.nav-link').css('color', '#FFF');
 			$(this).find('.barraMid').css("background-color", "#FFF");
-			// $(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			// $(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
-			// $(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			$(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
+			$(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(0deg)");
 			$(this).find('.barraTop').css("background-color", "#FFF");
 			$(this).find('.barraTop').css("top", "6px");
-			// $(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			// $(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
-			// $(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			$(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
+			$(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(0deg)");
 			$(this).find('.barraBot').css("background-color", "#FFF");
 			$(this).find('.barraBot').css("bottom", "0px");
@@ -116,15 +116,15 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "none");
 			$('.nav-item a.nav-link').css('color', 'rgba(0, 0, 0, .87)');
 			$(this).find('.barraMid').css("background-color", "transparent");
-			// $(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
-			// $(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
-			// $(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
+			$(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
+			$(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
 			$(this).find('.barraTop').css("top", "12px");
 			$(this).find('.barraTop').css("background-color", "#319B42");
-			// $(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
-			// $(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
-			// $(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
+			$(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
+			$(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("background-color", "#319B42");
 			$(this).find('.barraBot').css("bottom", "8px");
@@ -137,14 +137,14 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "block");
 			$('.nav-item a.nav-link').css('color', '#FFF');
 			$(this).find('.barraMid').css("background-color", "#319B42");
-			// $(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			// $(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
-			// $(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraTop').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			$(this).find('.barraTop').css("-ms-transform", "rotate(0deg)"); // IE 9
+			$(this).find('.barraTop').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(0deg)");
 			$(this).find('.barraTop').css("top", "6px");
-			// $(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
-			// $(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
-			// $(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraBot').css("-moz-transform", "rotate(0deg)"); // Mozilla Firefox
+			$(this).find('.barraBot').css("-ms-transform", "rotate(0deg)"); // IE 9
+			$(this).find('.barraBot').css("-webkit-transform", "rotate(0deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(0deg)");
 			$(this).find('.barraBot').css("bottom", "0px");
 		} else {
@@ -153,14 +153,14 @@ $(document).ready(function(){
 			$('.mudaNav').css("display", "none");
 			$('.nav-item a.nav-link').css('color', 'rgba(0, 0, 0, .87)');
 			$(this).find('.barraMid').css("background-color", "transparent");
-			// $(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
-			// $(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
-			// $(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraTop').css("-moz-transform", "rotate(-45deg)"); // Mozilla Firefox
+			$(this).find('.barraTop').css("-ms-transform", "rotate(-45deg)"); // IE 9
+			$(this).find('.barraTop').css("-webkit-transform", "rotate(-45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraTop').css("transform", "rotate(-45deg)");
 			$(this).find('.barraTop').css("top", "10px");
-			// $(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
-			// $(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
-			// $(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
+			$(this).find('.barraBot').css("-moz-transform", "rotate(45deg)"); // Mozilla Firefox
+			$(this).find('.barraBot').css("-ms-transform", "rotate(45deg)"); // IE 9
+			$(this).find('.barraBot').css("-webkit-transform", "rotate(45deg)"); // Chrome, Safari, Opera
 			$(this).find('.barraBot').css("transform", "rotate(45deg)");
 			$(this).find('.barraBot').css("bottom", "10px");
 		}
@@ -235,11 +235,11 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop : 0},900);
         return false;
     });
-    // var tempoDefineOverlay;
-    // function tempoDefine(){
-    //     tempoDefineToast = setTimeout(function(){$('.toast').css({opacity: 1}).animate({opacity: 0}, 2000);}, 3000);
-    //     tempoDefineOverlay = setTimeout(function(){$('.overlayNotifica').css('display', 'none');}, 4000);
-    // }
+    var tempoDefineOverlay;
+    function tempoDefine(){
+        tempoDefineToast = setTimeout(function(){$('.toast').css({opacity: 1}).animate({opacity: 0}, 2000);}, 3000);
+        tempoDefineOverlay = setTimeout(function(){$('.overlayNotifica').css('display', 'none');}, 4000);
+    }
     var urlLocation = window.location.href;
     if(urlLocation.indexOf("success") != -1){
         $('.toast__type').text('Enviado');
@@ -248,7 +248,7 @@ $(document).ready(function(){
         $('.overlayNotifica').css('display', 'block');
         $('.toast').addClass('toast--green');
         $('.toast').css({opacity: 0, display: 'block'}).animate({opacity: 1}, 2000);
-        // tempoDefine();
+        tempoDefine();
     } else if(urlLocation.indexOf("error") != -1){
         $('.toast__type').text('Falha');
         $('.toast__message').text('Falha ao enviar o email.');
@@ -256,7 +256,7 @@ $(document).ready(function(){
         $('.overlayNotifica').css('display', 'block');
         $('.toast').addClass('toast--red');
         $('.toast').css({opacity: 0, display: 'block'}).animate({opacity: 1}, 2000);
-        // tempoDefine();
+        tempoDefine();
     }
     $('.toast__close').click(function(){
         $('.overlayNotifica').css('display', 'none');
