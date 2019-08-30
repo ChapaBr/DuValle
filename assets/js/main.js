@@ -229,11 +229,11 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop : 0},900);
         return false;
     });
-    var tempoDefineOverlay;
-    function tempoDefine(){
-        tempoDefineToast = setTimeout(function(){$('.toast').css({opacity: 1}).animate({opacity: 0}, 2000);}, 3000);
-        tempoDefineOverlay = setTimeout(function(){$('.overlayNotifica').css('display', 'none');}, 4000);
-    }
+    // var tempoDefineOverlay;
+    // function tempoDefine(){
+    //     tempoDefineToast = setTimeout(function(){$('.toast').css({opacity: 1}).animate({opacity: 0}, 2000);}, 3000);
+    //     tempoDefineOverlay = setTimeout(function(){$('.overlayNotifica').css('display', 'none');}, 4000);
+    // }
     var urlLocation = window.location.href;
     if(urlLocation.indexOf("success") != -1){
         $('.toast__type').text('Enviado');
@@ -242,7 +242,7 @@ $(document).ready(function(){
         $('.overlayNotifica').css('display', 'block');
         $('.toast').addClass('toast--green');
         $('.toast').css({opacity: 0, display: 'block'}).animate({opacity: 1}, 2000);
-        tempoDefine();
+        // tempoDefine();
     } else if(urlLocation.indexOf("error") != -1){
         $('.toast__type').text('Falha');
         $('.toast__message').text('Falha ao enviar o email.');
@@ -250,7 +250,7 @@ $(document).ready(function(){
         $('.overlayNotifica').css('display', 'block');
         $('.toast').addClass('toast--red');
         $('.toast').css({opacity: 0, display: 'block'}).animate({opacity: 1}, 2000);
-        tempoDefine();
+        // tempoDefine();
     }
     $('.toast__close').click(function(){
         $('.overlayNotifica').css('display', 'none');
