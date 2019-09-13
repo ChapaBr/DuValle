@@ -1,10 +1,10 @@
-$(document).ready(function(){
-	setTimeout(function() {
+setTimeout(function() {
         $('#loadingWrap').fadeOut('400');
         $("html, body").animate({
             scrollTop: 0
         }, 120);
     }, 1600);
+$(document).ready(function(){
 	$('.filtroMobileItem').click(function(){
 		var typeItem = $(this).attr('rel');
 		if(typeItem === 'todos'){
