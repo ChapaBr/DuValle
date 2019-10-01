@@ -1,9 +1,10 @@
-setTimeout(function() {
-        $('#loadingWrap').fadeOut('400');
-        $("html, body").animate({
-            scrollTop: 0
-        }, 120);
-    }, 1600);
+// setTimeout(function() {
+//         $('#loadingWrap').fadeOut('400');
+//         $("html, body").animate({
+//             scrollTop: 0
+//         }, 120);
+//     }, 1600);
+$("#loadingWrap").delay(2000).fadeOut("slow");
 $(document).ready(function(){
 	$('.filtroMobileItem').click(function(){
 		var typeItem = $(this).attr('rel');
